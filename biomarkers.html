@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
@@ -30,37 +30,37 @@ tr:hover td{background:#161b22;color:#c9d1d9}
 .ad{color:#f85149}.pd{color:#e3b341}.ms{color:#58a6ff}
 footer{background:#161b22;border-top:1px solid #30363d;padding:20px;text-align:center;color:#484f58;font-size:.85em;margin-top:40px}
 </style><script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
-<title>🔬 Biomarcadores Moleculares — Neuroinflamación en AD, PD, MS</title>
-<meta name="description" content="13 biomarcadores moleculares en LCR y sangre comparados entre Alzheimer, Parkinson y Esclerosis Múltiple. Citocinas, NfL, GFAP, Tau, α-sinucleína.">
+<title>🔬 Molecular Biomarkers — Neuroinflammation in AD, PD, MS</title>
+<meta name="description" content="13 molecular biomarkers in CSF and blood compared across Alzheimer's, Parkinson's and Multiple Sclerosis. Cytokines, NfL, GFAP, Tau, α-synuclein.">
 </head><body>
-<nav><span class="logo">🧪 Neuroinflamación</span><a href="index.html" >🏠 Inicio</a><a href="alzheimer.html" >🧠 Alzheimer (AD)</a><a href="parkinson.html" >🤝 Parkinson (PD)</a><a href="esclerosis-multiple.html" >🧬 Esclerosis Múltiple</a><a href="biomarkers.html" class="active">🔬 Biomarcadores</a><a href="neuroimaging.html" >📡 Neuroimagen</a><a href="clinical-scales.html" >📊 Escalas Clínicas</a><a href="epidemiology.html" >🌍 Epidemiología</a><a href="genetics.html" >🧬 Genética</a><a href="treatments.html" >💊 Tratamientos</a><a href="clinical-trials.html" >🔬 Ensayos Clínicos</a><a href="economic-burden.html" >💰 Carga Económica</a><a href="neuroinflammation.html" >🔥 Neuroinflamación</a><a href="comparativas.html" >⚖️ Comparativas</a><a href="methodology.html" >📋 Metodología</a><a href="data.html" >📊 Datos</a><a href="sitemap.html" >🗺 Sitemap</a></nav>
+<nav><span class="logo">🧪 Neuroinflammation</span><a href="index.html" >🏠 Home</a><a href="alzheimer.html" >🧠 Alzheimer (AD)</a><a href="parkinson.html" >🤝 Parkinson (PD)</a><a href="esclerosis-multiple.html" >🧬 Multiple Sclerosis</a><a href="biomarkers.html" class="active">🔬 Biomarkers</a><a href="neuroimaging.html" >📡 Neuroimaging</a><a href="clinical-scales.html" >📊 Clinical Scales</a><a href="epidemiology.html" >🌍 Epidemiology</a><a href="genetics.html" >🧬 Genetics</a><a href="treatments.html" >💊 Treatments</a><a href="clinical-trials.html" >🔬 Clinical Trials</a><a href="economic-burden.html" >💰 Economic Burden</a><a href="neuroinflammation.html" >🔥 Neuroinflammation</a><a href="comparativas.html" >⚖️ Comparative Analysis</a><a href="methodology.html" >📋 Methodology</a><a href="data.html" >📊 Data</a><a href="sitemap.html" >🗺 Sitemap</a></nav>
 <div class="container">
-<h1>🔬 Biomarcadores Moleculares en Neuroinflamación</h1>
-<p class="subtitle">13 biomarcadores en LCR y sangre: citocinas, proteínas estructurales y marcadores de daño glial — AD vs PD vs MS vs Controles</p>
+<h1>🔬 Molecular Biomarkers in Neuroinflammation</h1>
+<p class="subtitle">13 biomarkers in CSF and blood: cytokines, structural proteins and glial damage markers — AD vs PD vs MS vs Controls</p>
 <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px">
 <span class="badge">🏦 Harvard Dataverse</span><span class="badge">DOI: 10.7910/DVN/X2TQQA</span>
-<span class="badge">13 biomarcadores</span><span class="badge">3 enfermedades</span>
+<span class="badge">13 biomarkers</span><span class="badge">3 diseases</span>
 </div>
-<div class="abstract"><strong>Resumen:</strong> Los biomarcadores moleculares en líquido cefalorraquídeo (LCR) y sangre son esenciales para el diagnóstico precoz, el seguimiento de progresión y la evaluación de tratamientos en enfermedades neurodegenerativas. Este análisis compara 13 biomarcadores clave en pacientes de Alzheimer, Parkinson y Esclerosis Múltiple frente a controles sanos. La neurofilament light chain (NfL) es el biomarcador de daño neuronal más inespecífico pero sensible; el p-Tau 181 es altamente específico para AD; el IFN-γ es el más elevado proporcionalmente en EM.</div>
+<div class="abstract"><strong>Summary:</strong> Molecular biomarkers in cerebrospinal fluid (CSF) and blood are essential for early diagnosis, progression monitoring and treatment evaluation in neurodegenerative diseases. This analysis compares 13 key biomarkers in patients with Alzheimer's, Parkinson's and Multiple Sclerosis against healthy controls. Neurofilament light chain (NfL) is the most sensitive yet non-specific neuronal damage biomarker; p-Tau 181 is highly specific for AD; IFN-γ is proportionally most elevated in MS.</div>
 <div class="kpis">
-<div class="kpi"><div class="val">24.8x</div><div class="lbl">📈 Mayor elevación<br>IFN-γ en MS/control</div></div>
+<div class="kpi"><div class="val">24.8x</div><div class="lbl">📈 Highest elevation<br>IFN-γ in MS/control</div></div>
 <div class="kpi"><div class="val">4.3x</div><div class="lbl">🧠 p-Tau 181<br>AD vs control</div></div>
-<div class="kpi"><div class="val">4.1x</div><div class="lbl">💡 NfL más elevado<br>en MS</div></div>
-<div class="kpi"><div class="val">0.4x</div><div class="lbl">🔻 Aβ42 reducido<br>en AD (clearance)</div></div>
+<div class="kpi"><div class="val">4.1x</div><div class="lbl">💡 NfL highest<br>in MS</div></div>
+<div class="kpi"><div class="val">0.4x</div><div class="lbl">🔻 Aβ42 reduced<br>in AD (clearance)</div></div>
 </div>
-<h2>Todos los Biomarcadores — Ratio Pacientes/Control</h2>
+<h2>All Biomarkers — Patient/Control Ratio</h2>
 <div class="chart-wrap"><div id="b1" style="height:480px"></div></div>
-<h2>Citocinas Proinflamatorias — Comparativa AD vs PD vs MS</h2>
+<h2>Pro-inflammatory Cytokines — AD vs PD vs MS</h2>
 <div class="chart-wrap"><div id="b2" style="height:420px"></div></div>
-<h2>Biomarcadores de Daño Neuronal (NfL, GFAP, YKL-40)</h2>
+<h2>Neuronal Damage Biomarkers (NfL, GFAP, YKL-40)</h2>
 <div class="chart-wrap"><div id="b3" style="height:380px"></div></div>
-<h2>Especificidad Diagnóstica por Biomarcador</h2>
+<h2>Diagnostic Specificity by Biomarker</h2>
 <div class="chart-wrap"><div id="b4" style="height:380px"></div></div>
-<h2>Hallazgos</h2>
-<p>Los biomarcadores inflamatorios muestran elevaciones inespecíficas en las tres enfermedades, pero con patrones diferenciados. AD: p-Tau y Aβ42 son los más específicos (ratio 4.3x y 0.4x respectivamente). PD: α-sinucleína en LCR muestra un patrón inverso —reducción, no elevación— porque se acumula en cuerpos de Lewy en el tejido neural. MS: IFN-γ (24.8x) refleja la naturaleza autoinmune mediada por linfocitos T. NfL en plasma es el biomarcador universal de neurodegeneración activa con mayor utilidad en monitorización de tratamiento.</p>
-<h2>Tabla: Valores de Referencia Completos</h2>
+<h2>Findings</h2>
+<p>Inflammatory biomarkers show non-specific elevations in all three diseases, but with differentiated patterns. AD: p-Tau and Aβ42 are the most specific (ratio 4.3x and 0.4x respectively). PD: α-synuclein in CSF shows an inverse pattern — reduction, not elevation — because it accumulates in Lewy bodies within neural tissue. MS: IFN-γ (24.8x) reflects the T-lymphocyte-mediated autoimmune nature of the disease. Plasma NfL is the universal biomarker of active neurodegeneration with the greatest utility in treatment monitoring.</p>
+<h2>Table: Complete Reference Values</h2>
 <div style="overflow-x:auto">
-<table><thead><tr><th>Biomarcador</th><th>Control (ref)</th><th>AD</th><th>Ratio AD</th><th>PD</th><th>Ratio PD</th><th>MS</th><th>Ratio MS</th></tr></thead>
+<table><thead><tr><th>Biomarker</th><th>Control (ref)</th><th>AD</th><th>Ratio AD</th><th>PD</th><th>Ratio PD</th><th>MS</th><th>Ratio MS</th></tr></thead>
 <tbody><tr><td><strong>IL-1β (pg/mL)</strong></td><td>2.1</td>
     <td class="ad">18.4</td><td>8.76x</td>
     <td class="pd">12.3</td><td>6.83x</td>
@@ -101,7 +101,7 @@ footer{background:#161b22;border-top:1px solid #30363d;padding:20px;text-align:c
     <td class="ad">348</td><td>2.11x</td>
     <td class="pd">198</td><td>1.24x</td>
     <td class="ms">312</td><td>1.93x</td></tr></tbody></table></div>
-<div class="citation"><h3>Cómo citar</h3><p><strong>APA:</strong> de la Serna, J. M. (2026). Neuroinflammation and Neurodegenerative Disorders: Integrated Molecular Biomarkers, Neuroimaging and Clinical Progression Data. Harvard Dataverse. https://doi.org/10.7910/DVN/X2TQQA</p><pre>@dataset{delaserna2026neuro,
+<div class="citation"><h3>How to cite</h3><p><strong>APA:</strong> de la Serna, J. M. (2026). Neuroinflammation and Neurodegenerative Disorders: Integrated Molecular Biomarkers, Neuroimaging and Clinical Progression Data. Harvard Dataverse. https://doi.org/10.7910/DVN/X2TQQA</p><pre>@dataset{delaserna2026neuro,
   author={de la Serna, Juan Moises},
   title={Neuroinflammation and Neurodegenerative Disorders: Integrated Molecular Biomarkers, Neuroimaging and Clinical Progression Data},
   year={2026},
@@ -109,10 +109,10 @@ footer{background:#161b22;border-top:1px solid #30363d;padding:20px;text-align:c
   doi={10.7910/DVN/X2TQQA},
   url={https://doi.org/10.7910/DVN/X2TQQA}
 }</pre></div>
-<footer><p>DOI: <a href="https://doi.org/10.7910/DVN/X2TQQA" target="_blank">10.7910/DVN/X2TQQA</a> &nbsp;|&nbsp; Autor: de la Serna, J. M. (UNIR) &nbsp;|&nbsp; Fuente: Literatura peer-reviewed 2013-2026 &nbsp;|&nbsp; CC0 1.0</p></footer>
+<footer><p>DOI: <a href="https://doi.org/10.7910/DVN/X2TQQA" target="_blank">10.7910/DVN/X2TQQA</a> &nbsp;|&nbsp; Author: de la Serna, J. M. (UNIR) &nbsp;|&nbsp; Source: Peer-reviewed literature 2013–2026 &nbsp;|&nbsp; CC0 1.0</p></footer>
 </div>
 <script>
-const bioKeys=["IL-1β (pg/mL)","IL-6 (pg/mL)","IL-8 (pg/mL)","TNF-α (pg/mL)","IFN-γ (pg/mL)","TGF-β (pg/mL)","Aβ42 (pg/mL)","Tau total (pg/mL)","p-Tau (pg/mL)","α-Syn (ng/mL)","NfL (pg/mL)","GFAP (pg/mL)","YKL-40 (ng/mL)"];const BIO={"IL-1β (pg/mL)":{"ctrl":[2.1,1.8,2],"pat":[18.4,12.3,15.7]},"IL-6 (pg/mL)":{"ctrl":[1.5,1.6,1.4],"pat":[22.1,14.8,19.3]},"IL-8 (pg/mL)":{"ctrl":[8.2,7.9,8.1],"pat":[24.6,18.2,26.4]},"TNF-α (pg/mL)":{"ctrl":[3.1,2.9,3],"pat":[19.8,11.4,16.2]},"IFN-γ (pg/mL)":{"ctrl":[2.4,2.3,2.1],"pat":[8.2,5.1,24.8]},"TGF-β (pg/mL)":{"ctrl":[180,175,178],"pat":[420,290,380]},"Aβ42 (pg/mL)":{"ctrl":[1100,1050,1080],"pat":[450,890,970]},"Tau total (pg/mL)":{"ctrl":[180,175,170],"pat":[680,210,195]},"p-Tau (pg/mL)":{"ctrl":[18,17,16],"pat":[78,22,19]},"α-Syn (ng/mL)":{"ctrl":[1.2,1.1,1.2],"pat":[0.8,3.8,1.3]},"NfL (pg/mL)":{"ctrl":[780,790,800],"pat":[3200,1850,4100]},"GFAP (pg/mL)":{"ctrl":[120,115,118],"pat":[580,320,420]},"YKL-40 (ng/mL)":{"ctrl":[165,160,162],"pat":[348,198,312]}};const DIS=["Alzheimer (AD)","Parkinson (PD)","Esclerosis Múltiple (MS)"];const DCOLS=["#f85149","#e3b341","#58a6ff"];
+const bioKeys=["IL-1β (pg/mL)","IL-6 (pg/mL)","IL-8 (pg/mL)","TNF-α (pg/mL)","IFN-γ (pg/mL)","TGF-β (pg/mL)","Aβ42 (pg/mL)","Tau total (pg/mL)","p-Tau (pg/mL)","α-Syn (ng/mL)","NfL (pg/mL)","GFAP (pg/mL)","YKL-40 (ng/mL)"];const BIO={"IL-1β (pg/mL)":{"ctrl":[2.1,1.8,2],"pat":[18.4,12.3,15.7]},"IL-6 (pg/mL)":{"ctrl":[1.5,1.6,1.4],"pat":[22.1,14.8,19.3]},"IL-8 (pg/mL)":{"ctrl":[8.2,7.9,8.1],"pat":[24.6,18.2,26.4]},"TNF-α (pg/mL)":{"ctrl":[3.1,2.9,3],"pat":[19.8,11.4,16.2]},"IFN-γ (pg/mL)":{"ctrl":[2.4,2.3,2.1],"pat":[8.2,5.1,24.8]},"TGF-β (pg/mL)":{"ctrl":[180,175,178],"pat":[420,290,380]},"Aβ42 (pg/mL)":{"ctrl":[1100,1050,1080],"pat":[450,890,970]},"Tau total (pg/mL)":{"ctrl":[180,175,170],"pat":[680,210,195]},"p-Tau (pg/mL)":{"ctrl":[18,17,16],"pat":[78,22,19]},"α-Syn (ng/mL)":{"ctrl":[1.2,1.1,1.2],"pat":[0.8,3.8,1.3]},"NfL (pg/mL)":{"ctrl":[780,790,800],"pat":[3200,1850,4100]},"GFAP (pg/mL)":{"ctrl":[120,115,118],"pat":[580,320,420]},"YKL-40 (ng/mL)":{"ctrl":[165,160,162],"pat":[348,198,312]}};const DIS=["Alzheimer (AD)","Parkinson (PD)","Multiple Sclerosis (MS)"];const DCOLS=["#f85149","#e3b341","#58a6ff"];
 const bioLabels=bioKeys.map(k=>k.split(' ')[0]);
 
 // B1: heatmap ratios
@@ -132,16 +132,16 @@ Plotly.newPlot('b2',DIS.map((d,di)=>({type:'bar',name:d,
   y:cytKeys.map(k=>BIO[k].pat[di]),
   marker:{color:DCOLS[di]}})),
 {barmode:'group',paper_bgcolor:'#161b22',plot_bgcolor:'#161b22',font:{color:'#c9d1d9',size:11},
-  xaxis:{color:'#8b949e'},yaxis:{title:'pg/mL en LCR',color:'#8b949e',gridcolor:'#30363d'},
+  xaxis:{color:'#8b949e'},yaxis:{title:'pg/mL in CSF',color:'#8b949e',gridcolor:'#30363d'},
   legend:{bgcolor:'#0d1117'},margin:{l:70,r:20,t:20,b:60},height:420});
 
 // B3: NfL, GFAP, YKL-40
 const damKeys=['NfL (pg/mL)','GFAP (pg/mL)','YKL-40 (ng/mL)'];
 Plotly.newPlot('b3',[
-  {type:'bar',name:'Controles',x:damKeys.map(k=>k.split(' ')[0]),y:damKeys.map(k=>BIO[k].ctrl[0]),marker:{color:'#30363d'}},
+  {type:'bar',name:'Controls',x:damKeys.map(k=>k.split(' ')[0]),y:damKeys.map(k=>BIO[k].ctrl[0]),marker:{color:'#30363d'}},
   ...DIS.map((d,di)=>({type:'bar',name:d,x:damKeys.map(k=>k.split(' ')[0]),y:damKeys.map(k=>BIO[k].pat[di]),marker:{color:DCOLS[di]}}))
 ],{barmode:'group',paper_bgcolor:'#161b22',plot_bgcolor:'#161b22',font:{color:'#c9d1d9',size:11},
-  xaxis:{color:'#8b949e'},yaxis:{title:'Concentración LCR',color:'#8b949e',gridcolor:'#30363d'},
+  xaxis:{color:'#8b949e'},yaxis:{title:'CSF Concentration',color:'#8b949e',gridcolor:'#30363d'},
   legend:{bgcolor:'#0d1117'},margin:{l:70,r:20,t:20,b:60}});
 
 // B4: scatter specificity

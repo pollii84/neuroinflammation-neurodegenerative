@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
@@ -30,41 +30,41 @@ tr:hover td{background:#161b22;color:#c9d1d9}
 .ad{color:#f85149}.pd{color:#e3b341}.ms{color:#58a6ff}
 footer{background:#161b22;border-top:1px solid #30363d;padding:20px;text-align:center;color:#484f58;font-size:.85em;margin-top:40px}
 </style><script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
-<title>⚖️ Comparativas AD vs PD vs MS</title>
+<title>⚖️ Comparative Analysis AD vs PD vs MS</title>
 </head><body>
-<nav><span class="logo">🧪 Neuroinflamación</span><a href="index.html" >🏠 Inicio</a><a href="alzheimer.html" >🧠 Alzheimer (AD)</a><a href="parkinson.html" >🤝 Parkinson (PD)</a><a href="esclerosis-multiple.html" >🧬 Esclerosis Múltiple</a><a href="biomarkers.html" >🔬 Biomarcadores</a><a href="neuroimaging.html" >📡 Neuroimagen</a><a href="clinical-scales.html" >📊 Escalas Clínicas</a><a href="epidemiology.html" >🌍 Epidemiología</a><a href="genetics.html" >🧬 Genética</a><a href="treatments.html" >💊 Tratamientos</a><a href="clinical-trials.html" >🔬 Ensayos Clínicos</a><a href="economic-burden.html" >💰 Carga Económica</a><a href="neuroinflammation.html" >🔥 Neuroinflamación</a><a href="comparativas.html" class="active">⚖️ Comparativas</a><a href="methodology.html" >📋 Metodología</a><a href="data.html" >📊 Datos</a><a href="sitemap.html" >🗺 Sitemap</a></nav>
+<nav><span class="logo">🧪 Neuroinflammation</span><a href="index.html" >🏠 Home</a><a href="alzheimer.html" >🧠 Alzheimer (AD)</a><a href="parkinson.html" >🤝 Parkinson (PD)</a><a href="esclerosis-multiple.html" >🧬 Multiple Sclerosis</a><a href="biomarkers.html" >🔬 Biomarkers</a><a href="neuroimaging.html" >📡 Neuroimaging</a><a href="clinical-scales.html" >📊 Clinical Scales</a><a href="epidemiology.html" >🌍 Epidemiology</a><a href="genetics.html" >🧬 Genetics</a><a href="treatments.html" >💊 Treatments</a><a href="clinical-trials.html" >🔬 Clinical Trials</a><a href="economic-burden.html" >💰 Economic Burden</a><a href="neuroinflammation.html" >🔥 Neuroinflammation</a><a href="comparativas.html" class="active">⚖️ Comparative Analysis</a><a href="methodology.html" >📋 Methodology</a><a href="data.html" >📊 Data</a><a href="sitemap.html" >🗺 Sitemap</a></nav>
 <div class="container">
-<h1>⚖️ Análisis Comparativo — AD vs PD vs MS</h1>
-<p class="subtitle">Comparativa multidimensional de las tres enfermedades neurodegenerativas</p>
+<h1>⚖️ Comparative Analysis — AD vs PD vs MS</h1>
+<p class="subtitle">Multidimensional comparison of the three neurodegenerative diseases</p>
 <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px">
 <span class="badge">🏦 Harvard Dataverse</span><span class="badge">DOI: 10.7910/DVN/X2TQQA</span>
 </div>
-<div class="abstract"><strong>Resumen:</strong> Las tres enfermedades neurodegenerativas comparten el mecanismo central de neuroinflamación crónica pero difieren en su perfil clínico, epidemiológico, genético y terapéutico. AD lidera en prevalencia (50M) y carga económica ($517B). PD es la enfermedad neurológica de mayor crecimiento. MS destaca por su inicio temprano (32 años) y el mayor desarrollo terapéutico. Este análisis comparativo facilita la identificación de patrones transversales y dianas terapéuticas compartidas.</div>
+<div class="abstract"><strong>Summary:</strong> The three neurodegenerative diseases share the central mechanism of chronic neuroinflammation but differ in their clinical, epidemiological, genetic, and therapeutic profiles. AD leads in prevalence (50M) and economic burden ($517B). PD is the fastest-growing neurological disease. MS stands out for its early onset (32 years) and the greatest therapeutic development. This comparative analysis facilitates the identification of cross-cutting patterns and shared therapeutic targets.</div>
 <div class="kpis">
-<div class="kpi"><div class="val" style="color:#f85149">$517B</div><div class="lbl">🧠 Mayor carga econ.<br>Alzheimer</div></div>
-<div class="kpi"><div class="val" style="color:#e3b341">60 años</div><div class="lbl">🤝 Inicio más tardío<br>Parkinson</div></div>
-<div class="kpi"><div class="val" style="color:#58a6ff">68%</div><div class="lbl">🧬 Mayor eficacia tto.<br>MS (natalizumab)</div></div>
-<div class="kpi"><div class="val">$738B</div><div class="lbl">💰 Carga total<br>combinada</div></div>
+<div class="kpi"><div class="val" style="color:#f85149">$517B</div><div class="lbl">🧠 Highest economic burden<br>Alzheimer</div></div>
+<div class="kpi"><div class="val" style="color:#e3b341">60 years</div><div class="lbl">🤝 Latest onset age<br>Parkinson</div></div>
+<div class="kpi"><div class="val" style="color:#58a6ff">68%</div><div class="lbl">🧬 Highest treatment efficacy<br>MS (natalizumab)</div></div>
+<div class="kpi"><div class="val">$738B</div><div class="lbl">💰 Total combined<br>burden</div></div>
 </div>
-<h2>Radar Comparativo Multidimensional</h2>
+<h2>Multidimensional Comparative Radar</h2>
 <div class="chart-wrap"><div id="cmp1" style="height:440px"></div></div>
-<h2>Comparativa Epidemiológica</h2>
+<h2>Epidemiological Comparison</h2>
 <div class="chart-wrap"><div id="cmp2" style="height:380px"></div></div>
-<h2>Eficacia Terapéutica Media vs Carga Económica</h2>
+<h2>Mean Therapeutic Efficacy vs Economic Burden</h2>
 <div class="chart-wrap"><div id="cmp3" style="height:380px"></div></div>
-<h2>Tabla Comparativa Resumen</h2>
-<table><thead><tr><th>Dimensión</th><th class="ad">🧠 Alzheimer</th><th class="pd">🤝 Parkinson</th><th class="ms">🧬 Esclerosis Múltiple</th></tr></thead>
+<h2>Summary Comparison Table</h2>
+<table><thead><tr><th>Dimension</th><th class="ad">🧠 Alzheimer</th><th class="pd">🤝 Parkinson</th><th class="ms">🧬 Multiple Sclerosis</th></tr></thead>
 <tbody>
-<tr><td>Prevalencia</td><td class="ad">50M</td><td class="pd">10M</td><td class="ms">2.9M</td></tr>
-<tr><td>Edad inicio</td><td class="ad">72 años</td><td class="pd">60 años</td><td class="ms">32 años</td></tr>
-<tr><td>Supervivencia</td><td class="ad">8 años</td><td class="pd">15 años</td><td class="ms">~normal</td></tr>
-<tr><td>Mayor biomarcador</td><td class="ad">p-Tau (4.3x)</td><td class="pd">α-Sin (3.5x)</td><td class="ms">IFN-γ (24.8x)</td></tr>
-<tr><td>Neuroimagen clave</td><td class="ad">PET amiloide (85%)</td><td class="pd">DAT-SPECT (75%)</td><td class="ms">T2-FLAIR (18 lesiones)</td></tr>
-<tr><td>Mayor OR genético</td><td class="ad">APOE ε4/ε4 (12x)</td><td class="pd">LRRK2 (5.1x)</td><td class="ms">HLA-DRB1 (3.1x)</td></tr>
-<tr><td>Mejor tratamiento</td><td class="ad">Donanemab (35%)</td><td class="pd">Levodopa (55%)</td><td class="ms">Natalizumab (68%)</td></tr>
-<tr><td>Carga económica total</td><td class="ad">$517B/año</td><td class="pd">$77B/año</td><td class="ms">$144B/año</td></tr>
+<tr><td>Prevalence</td><td class="ad">50M</td><td class="pd">10M</td><td class="ms">2.9M</td></tr>
+<tr><td>Age of onset</td><td class="ad">72 years</td><td class="pd">60 years</td><td class="ms">32 years</td></tr>
+<tr><td>Survival</td><td class="ad">8 years</td><td class="pd">15 years</td><td class="ms">~normal</td></tr>
+<tr><td>Top biomarker</td><td class="ad">p-Tau (4.3x)</td><td class="pd">α-Syn (3.5x)</td><td class="ms">IFN-γ (24.8x)</td></tr>
+<tr><td>Key neuroimaging</td><td class="ad">Amyloid PET (85%)</td><td class="pd">DAT-SPECT (75%)</td><td class="ms">T2-FLAIR (18 lesions)</td></tr>
+<tr><td>Highest genetic OR</td><td class="ad">APOE ε4/ε4 (12x)</td><td class="pd">LRRK2 (5.1x)</td><td class="ms">HLA-DRB1 (3.1x)</td></tr>
+<tr><td>Best treatment</td><td class="ad">Donanemab (35%)</td><td class="pd">Levodopa (55%)</td><td class="ms">Natalizumab (68%)</td></tr>
+<tr><td>Total economic burden</td><td class="ad">$517B/year</td><td class="pd">$77B/year</td><td class="ms">$144B/year</td></tr>
 </tbody></table>
-<div class="citation"><h3>Cómo citar</h3><p><strong>APA:</strong> de la Serna, J. M. (2026). Neuroinflammation and Neurodegenerative Disorders: Integrated Molecular Biomarkers, Neuroimaging and Clinical Progression Data. Harvard Dataverse. https://doi.org/10.7910/DVN/X2TQQA</p><pre>@dataset{delaserna2026neuro,
+<div class="citation"><h3>How to cite</h3><p><strong>APA:</strong> de la Serna, J. M. (2026). Neuroinflammation and Neurodegenerative Disorders: Integrated Molecular Biomarkers, Neuroimaging and Clinical Progression Data. Harvard Dataverse. https://doi.org/10.7910/DVN/X2TQQA</p><pre>@dataset{delaserna2026neuro,
   author={de la Serna, Juan Moises},
   title={Neuroinflammation and Neurodegenerative Disorders: Integrated Molecular Biomarkers, Neuroimaging and Clinical Progression Data},
   year={2026},
@@ -72,11 +72,11 @@ footer{background:#161b22;border-top:1px solid #30363d;padding:20px;text-align:c
   doi={10.7910/DVN/X2TQQA},
   url={https://doi.org/10.7910/DVN/X2TQQA}
 }</pre></div>
-<footer><p>DOI: <a href="https://doi.org/10.7910/DVN/X2TQQA" target="_blank">10.7910/DVN/X2TQQA</a> &nbsp;|&nbsp; Autor: de la Serna, J. M. (UNIR) &nbsp;|&nbsp; Fuente: Literatura peer-reviewed 2013-2026 &nbsp;|&nbsp; CC0 1.0</p></footer>
+<footer><p>DOI: <a href="https://doi.org/10.7910/DVN/X2TQQA" target="_blank">10.7910/DVN/X2TQQA</a> &nbsp;|&nbsp; Author: de la Serna, J. M. (UNIR) &nbsp;|&nbsp; Source: Peer-reviewed literature 2013–2026 &nbsp;|&nbsp; CC0 1.0</p></footer>
 </div>
 <script>
-const DIS=["Alzheimer (AD)","Parkinson (PD)","Esclerosis Múltiple (MS)"];const DCOLS=["#f85149","#e3b341","#58a6ff"];const EPI={"prevalence_M":[50,10,2.9],"incidence_100k":[15.8,14.1,5.2],"sexRatio_F_M":[0.6,0.5,2.3],"ageOnset":[72,60,32],"survivalYrs":[8,15,30]};const ECON={"direct":[355,52,62],"indirect":[162,25,82],"total":[517,77,144]};const TREAT=[{"dis":"AD","drug":"Lecanemab","mech":"Anti-Aβ mAb","eff":27,"year":2023},{"dis":"AD","drug":"Donanemab","mech":"Anti-Aβ mAb","eff":35,"year":2024},{"dis":"AD","drug":"Memantina","mech":"NMDA antagonist","eff":12,"year":2003},{"dis":"AD","drug":"Donepezil","mech":"AChE inhibitor","eff":15,"year":1996},{"dis":"PD","drug":"Levodopa","mech":"DA precursor","eff":55,"year":1970},{"dis":"PD","drug":"Pramipexol","mech":"DA agonist","eff":38,"year":1997},{"dis":"PD","drug":"Safinamida","mech":"MAO-B inhibitor","eff":22,"year":2017},{"dis":"MS","drug":"Natalizumab","mech":"Anti-α4-integrin","eff":68,"year":2004},{"dis":"MS","drug":"Ocrelizumab","mech":"Anti-CD20 mAb","eff":46,"year":2017},{"dis":"MS","drug":"Cladribina","mech":"Lymphocyte depl.","eff":55,"year":2019}];const GENES=[{"gene":"APOE ε4","dis":"AD","OR":3.7,"pop":"%carriers: 25% AD, 8% ctrl"},{"gene":"APOE ε4/ε4","dis":"AD","OR":12,"pop":"Homozigote: 2-3% pop"},{"gene":"LRRK2 G2019S","dis":"PD","OR":5.1,"pop":"1-2% sporadic PD"},{"gene":"GBA N370S","dis":"PD","OR":3.8,"pop":"5-8% PD carriers"},{"gene":"HLA-DRB1*15:01","dis":"MS","OR":3.1,"pop":"30-40% MS patients"},{"gene":"TREM2","dis":"AD","OR":2.9,"pop":"Rare; microglial activation"},{"gene":"SNCA","dis":"PD","OR":2.4,"pop":"α-synuclein triplication"},{"gene":"IL2RA","dis":"MS","OR":1.6,"pop":"Common variant MS risk"}];const SCALES={"AD - CDR anual":{"scale":"CDR (0-3)","baseline":0.5,"progression":0.8,"advanced":2.5},"PD - UPDRS anual":{"scale":"UPDRS (0-199)","baseline":32,"progression":3.2,"advanced":95},"MS - EDSS anual":{"scale":"EDSS (0-10)","baseline":2.1,"progression":0.5,"advanced":6.5}};
-const catR=['Prevalencia/10M','Inv.Edad inicio','Superv.años/3','Eficacia tto%','Inv.Carga$'];
+const DIS=["Alzheimer (AD)","Parkinson (PD)","Multiple Sclerosis (MS)"];const DCOLS=["#f85149","#e3b341","#58a6ff"];const EPI={"prevalence_M":[50,10,2.9],"incidence_100k":[15.8,14.1,5.2],"sexRatio_F_M":[0.6,0.5,2.3],"ageOnset":[72,60,32],"survivalYrs":[8,15,30]};const ECON={"direct":[355,52,62],"indirect":[162,25,82],"total":[517,77,144]};const TREAT=[{"dis":"AD","drug":"Lecanemab","mech":"Anti-Aβ mAb","eff":27,"year":2023},{"dis":"AD","drug":"Donanemab","mech":"Anti-Aβ mAb","eff":35,"year":2024},{"dis":"AD","drug":"Memantina","mech":"NMDA antagonist","eff":12,"year":2003},{"dis":"AD","drug":"Donepezil","mech":"AChE inhibitor","eff":15,"year":1996},{"dis":"PD","drug":"Levodopa","mech":"DA precursor","eff":55,"year":1970},{"dis":"PD","drug":"Pramipexol","mech":"DA agonist","eff":38,"year":1997},{"dis":"PD","drug":"Safinamida","mech":"MAO-B inhibitor","eff":22,"year":2017},{"dis":"MS","drug":"Natalizumab","mech":"Anti-α4-integrin","eff":68,"year":2004},{"dis":"MS","drug":"Ocrelizumab","mech":"Anti-CD20 mAb","eff":46,"year":2017},{"dis":"MS","drug":"Cladribina","mech":"Lymphocyte depl.","eff":55,"year":2019}];const GENES=[{"gene":"APOE ε4","dis":"AD","OR":3.7,"pop":"%carriers: 25% AD, 8% ctrl"},{"gene":"APOE ε4/ε4","dis":"AD","OR":12,"pop":"Homozigote: 2-3% pop"},{"gene":"LRRK2 G2019S","dis":"PD","OR":5.1,"pop":"1-2% sporadic PD"},{"gene":"GBA N370S","dis":"PD","OR":3.8,"pop":"5-8% PD carriers"},{"gene":"HLA-DRB1*15:01","dis":"MS","OR":3.1,"pop":"30-40% MS patients"},{"gene":"TREM2","dis":"AD","OR":2.9,"pop":"Rare; microglial activation"},{"gene":"SNCA","dis":"PD","OR":2.4,"pop":"α-synuclein triplication"},{"gene":"IL2RA","dis":"MS","OR":1.6,"pop":"Common variant MS risk"}];const SCALES={"AD - CDR anual":{"scale":"CDR (0-3)","baseline":0.5,"progression":0.8,"advanced":2.5},"PD - UPDRS anual":{"scale":"UPDRS (0-199)","baseline":32,"progression":3.2,"advanced":95},"MS - EDSS anual":{"scale":"EDSS (0-10)","baseline":2.1,"progression":0.5,"advanced":6.5}};
+const catR=['Prevalence/10M','Inv.Age onset','Surv.yrs/3','Treatment eff%','Inv.Burden$'];
 const radVals=DIS.map((d,di)=>{
   const ds=['AD','PD','MS'][di];
   const avgEff=Math.round(TREAT.filter(t=>t.dis===ds).reduce((s,t)=>s+t.eff,0)/TREAT.filter(t=>t.dis===ds).length);
@@ -89,14 +89,14 @@ Plotly.newPlot('cmp1',DIS.map((d,di)=>({
 {polar:{bgcolor:'#161b22',radialaxis:{color:'#8b949e',gridcolor:'#30363d'},angularaxis:{color:'#8b949e'}},
   paper_bgcolor:'#161b22',font:{color:'#c9d1d9',size:11},legend:{bgcolor:'#0d1117',bordercolor:'#30363d'},margin:{l:60,r:60,t:40,b:60},height:440});
 Plotly.newPlot('cmp2',[
-  {type:'bar',name:'Prevalencia (M)',x:DIS,y:EPI.prevalence_M,marker:{color:DCOLS}},
-  {type:'bar',name:'Incidencia /100k',x:DIS,y:EPI.incidence_100k,marker:{color:DCOLS.map(c=>c+'88')}}
-],{barmode:'group',paper_bgcolor:'#161b22',plot_bgcolor:'#161b22',font:{color:'#c9d1d9',size:11},xaxis:{color:'#8b949e'},yaxis:{title:'Valor',color:'#8b949e',gridcolor:'#30363d'},legend:{bgcolor:'#0d1117'},margin:{l:60,r:20,t:20,b:60}});
+  {type:'bar',name:'Prevalence (M)',x:DIS,y:EPI.prevalence_M,marker:{color:DCOLS}},
+  {type:'bar',name:'Incidence /100k',x:DIS,y:EPI.incidence_100k,marker:{color:DCOLS.map(c=>c+'88')}}
+],{barmode:'group',paper_bgcolor:'#161b22',plot_bgcolor:'#161b22',font:{color:'#c9d1d9',size:11},xaxis:{color:'#8b949e'},yaxis:{title:'Value',color:'#8b949e',gridcolor:'#30363d'},legend:{bgcolor:'#0d1117'},margin:{l:60,r:20,t:20,b:60}});
 const avgEffs=DIS.map((_,di)=>{const ds=['AD','PD','MS'][di];const tD=TREAT.filter(t=>t.dis===ds);return Math.round(tD.reduce((s,t)=>s+t.eff,0)/tD.length);});
 Plotly.newPlot('cmp3',[{type:'scatter',mode:'markers+text',
   x:avgEffs,y:ECON.total,text:DIS,textposition:'top center',
   marker:{size:EPI.prevalence_M.map(v=>v/3+10),color:DCOLS,opacity:0.85},
-  hovertemplate:'<b>%{text}</b><br>Eficacia: %{x}%<br>Carga: $%{y}B<extra></extra>'}],
-{paper_bgcolor:'#161b22',plot_bgcolor:'#161b22',font:{color:'#c9d1d9',size:12},xaxis:{title:'Eficacia media tratamientos (%)',color:'#8b949e',gridcolor:'#30363d'},yaxis:{title:'Carga económica total (B USD)',color:'#8b949e',gridcolor:'#30363d'},margin:{l:80,r:20,t:20,b:60}});
+  hovertemplate:'<b>%{text}</b><br>Efficacy: %{x}%<br>Burden: $%{y}B<extra></extra>'}],
+{paper_bgcolor:'#161b22',plot_bgcolor:'#161b22',font:{color:'#c9d1d9',size:12},xaxis:{title:'Mean treatment efficacy (%)',color:'#8b949e',gridcolor:'#30363d'},yaxis:{title:'Total economic burden (B USD)',color:'#8b949e',gridcolor:'#30363d'},margin:{l:80,r:20,t:20,b:60}});
 </script>
 </body></html>
