@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Open science interactive dashboard: neuroinflammation data across Alzheimer's, Parkinson's, and Multiple Sclerosis. Biomarkers, neuroimaging, epidemiology, genetics, and clinical data. DOI: 10.7910/DVN/X2TQQA">
   <meta name="author" content="Juan Moisés de la Serna Tuya">
-  <meta name="keywords" content="alzheimer, dashboard, multiple-sclerosis, neuroinflammation, neuroscience, open-data, parkinson, dataset, fair-data, zenodo, orcid, juan moises de la serna">
+  <meta name="keywords" content="alzheimer, dashboard, multiple-sclerosis, neuroinflammation, neuroscience, open-data, parkinson, dataset, fair-data, zenodo, orcid">
   <meta name="robots" content="index, follow">
   <meta property="og:type" content="dataset">
   <meta property="og:title" content="Neuroinflammation in Neurodegenerative Disorders">
@@ -35,7 +35,7 @@
   <meta name="twitter:title" content="Neuroinflammation in Neurodegenerative Disorders">
   <meta name="twitter:description" content="Open science interactive dashboard for neuroinflammation research. DOI: 10.7910/DVN/X2TQQA">
   <link rel="canonical" href="https://juanmoisesd.github.io/neuroinflammation-neurodegenerative/">
-  <title>Neuroinflammation in Neurodegenerative Disorders | Juan Moisés de la Serna Tuya</title>
+  <title>Neuroinflammation in Neurodegenerative Disorders | Dashboard</title>
 
   <script type="application/ld+json">
   {
@@ -53,491 +53,487 @@
       "@type": "Person",
       "name": "Juan Moisés de la Serna Tuya",
       "identifier": "https://orcid.org/0000-0002-8401-8018",
-      "sameAs": [
-        "https://orcid.org/0000-0002-8401-8018",
-        "https://www.linkedin.com/in/juanmoisesdelaserna/",
-        "https://www.scopus.com/authid/detail.uri?authorId=26632846700",
-        "https://www.researchgate.net/profile/Juan_De_La_Serna_Tuya",
-        "https://github.com/juanmoisesd"
-      ],
-      "affiliation": {
-        "@type": "Organization",
-        "name": "Universidad Internacional de La Rioja (UNIR)"
-      }
+      "affiliation": { "@type": "Organization", "name": "Universidad Internacional de La Rioja (UNIR)" }
     },
-    "publisher": {
-      "@type": "Organization",
-      "name": "Universidad Internacional de La Rioja (UNIR)"
-    },
+    "publisher": { "@type": "Organization", "name": "Universidad Internacional de La Rioja (UNIR)" },
     "datePublished": "2025",
     "dateModified": "2026",
-    "inLanguage": ["es", "en"],
-    "distribution": {
-      "@type": "DataDownload",
-      "encodingFormat": "text/html",
-      "contentUrl": "https://juanmoisesd.github.io/neuroinflammation-neurodegenerative/"
-    }
+    "inLanguage": ["es", "en"]
   }
   </script>
 
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-    :root {
-      --primary: #0366d6;
-      --text: #24292e;
-      --text-muted: #586069;
-      --bg: #ffffff;
-      --surface: #f6f8fa;
-      --border: #e1e4e8;
-      --accent: #28a745;
-      --accent-hover: #218838;
-    }
-
     body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
-      color: var(--text);
-      background: var(--bg);
-      line-height: 1.6;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+      background: #0d1117;
+      color: #c9d1d9;
+      line-height: 1.7;
       font-size: 1rem;
     }
 
-    /* ── Language switch ── */
-    .site-header__lang {
-      text-align: right;
-      margin-bottom: 1rem;
-      font-size: 0.75rem;
-      letter-spacing: 0.04em;
-    }
-    .site-header__lang-sep {
-      color: rgba(255,255,255,0.4);
-      margin: 0 0.3rem;
-    }
-    .lang-btn {
-      background: none;
-      border: none;
-      padding: 0;
-      cursor: pointer;
-      font-family: inherit;
-      font-size: inherit;
-      font-weight: 600;
-      letter-spacing: inherit;
-      color: #cce5ff;
-      transition: color 0.15s ease;
-    }
-    .lang-btn[aria-pressed="true"] {
-      color: #fff;
-      cursor: default;
-      pointer-events: none;
-    }
-    .lang-btn:not([aria-pressed="true"]):hover {
-      color: #fff;
-      text-decoration: underline;
-    }
-    .lang-btn:focus-visible {
-      outline: 2px solid #fff;
-      outline-offset: 2px;
-      border-radius: 2px;
-      color: #fff;
-    }
+    a { color: #58a6ff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
 
-    /* ── Header ── */
-    .site-header {
-      background: var(--primary);
-      color: #fff;
-      padding: 2.5rem 2rem 2rem;
-    }
-    .site-header__inner {
-      max-width: 860px;
-      margin: 0 auto;
-    }
-    .site-header__title {
-      font-size: clamp(1.4rem, 4vw, 1.9rem);
-      font-weight: 700;
-      line-height: 1.2;
-      text-wrap: balance;
-      margin-bottom: 0.5rem;
-    }
-    .site-header__subtitle {
-      opacity: 0.85;
-      font-size: 0.95rem;
-      margin-bottom: 1.25rem;
-    }
-    .site-header__subtitle a {
-      color: #cce5ff;
-      text-decoration: none;
-    }
-    .site-header__subtitle a:hover,
-    .site-header__subtitle a:focus-visible {
-      text-decoration: underline;
-      color: #fff;
-    }
-    .site-header__badges {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-      margin-bottom: 1.5rem;
-    }
-    .site-header__badges img { height: 20px; }
-    .site-header__cta {
-      display: inline-block;
-      background: var(--accent);
-      color: #fff;
-      padding: 0.6rem 1.4rem;
-      border-radius: 6px;
-      font-weight: 600;
-      font-size: 0.95rem;
-      text-decoration: none;
-      transition: background 0.15s ease;
-    }
-    .site-header__cta:hover { background: var(--accent-hover); }
-    .site-header__cta:focus-visible {
-      outline: 2px solid #fff;
-      outline-offset: 2px;
-    }
-
-    /* ── Main ── */
-    main {
-      max-width: 860px;
-      margin: 0 auto;
-      padding: 2rem 2rem 3rem;
-    }
-
-    /* ── Section headings ── */
-    .section-label {
-      font-size: 1.1rem;
-      font-weight: 600;
-      color: var(--primary);
-      line-height: 1.4;
-      text-wrap: balance;
-      padding-bottom: 0.5rem;
-      border-bottom: 1px solid var(--border);
-      margin-bottom: 1.25rem;
-    }
-
-    /* ── Featured destinations ── */
-    .featured { margin-bottom: 2.5rem; }
-    .featured__list { list-style: none; }
-    .featured__item {
+    /* ── Layout ── */
+    .site-layout {
       display: grid;
-      grid-template-columns: 1fr auto;
-      align-items: start;
-      gap: 1rem;
-      padding: 1rem 0;
-      border-bottom: 1px solid var(--border);
+      grid-template-columns: 220px 1fr;
+      min-height: 100vh;
     }
-    .featured__item:last-child { border-bottom: none; }
-    .featured__item-name {
-      font-size: 1.05rem;
-      font-weight: 600;
-      color: var(--primary);
+
+    /* ── Sidebar ── */
+    .sidebar {
+      background: #161b22;
+      border-right: 1px solid #30363d;
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      scrollbar-width: thin;
+      scrollbar-color: #30363d #161b22;
+      z-index: 10;
+    }
+
+    .sidebar__header {
+      padding: 1.125rem 1rem 0.875rem;
+      border-bottom: 1px solid #30363d;
+    }
+
+    .sidebar__logo {
+      display: block;
+      font-weight: 700;
+      font-size: 0.875rem;
+      color: #f0f6fc;
       text-decoration: none;
       line-height: 1.3;
-      display: block;
-      margin-bottom: 0.25rem;
     }
-    .featured__item-name:hover { text-decoration: underline; }
-    .featured__item-name:focus-visible {
-      outline: 2px solid var(--primary);
-      outline-offset: 2px;
-      border-radius: 2px;
-      text-decoration: underline;
-    }
-    .featured__item-desc {
-      font-size: 0.875rem;
-      color: var(--text-muted);
-      max-width: 62ch;
-      text-wrap: pretty;
-    }
-    .featured__arrow {
-      color: var(--text-muted);
-      font-size: 0.9rem;
-      padding-top: 0.2rem;
-      flex-shrink: 0;
-    }
+    .sidebar__logo:hover { color: #58a6ff; text-decoration: none; }
 
-    /* ── Topic groups ── */
-    .topics { margin-bottom: 2.5rem; }
-    .topics__grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 2rem;
+    /* Language toggle (index.html only) */
+    .sidebar__lang {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      margin-top: 0.625rem;
+      font-size: 0.72rem;
     }
-    .topics__group-label {
-      font-size: 0.8rem;
-      font-weight: 600;
-      color: var(--text);
-      margin-bottom: 0.5rem;
+    .sidebar__lang-sep { color: #484f58; }
+    .lang-btn {
+      background: none; border: none; padding: 0;
+      cursor: pointer; font-family: inherit; font-size: inherit;
+      font-weight: 600; color: #586069;
+      transition: color 0.12s;
     }
-    .topics__group-list { list-style: none; }
-    .topics__group-item {
-      padding: 0.25rem 0;
-      border-bottom: 1px solid var(--border);
-      font-size: 0.875rem;
-    }
-    .topics__group-item:last-child { border-bottom: none; }
-    .topics__group-item a {
-      color: var(--primary);
+    .lang-btn[aria-pressed="true"] { color: #c9d1d9; cursor: default; pointer-events: none; }
+    .lang-btn:not([aria-pressed="true"]):hover { color: #c9d1d9; text-decoration: underline; }
+    .lang-btn:focus-visible { outline: 2px solid #58a6ff; outline-offset: 2px; border-radius: 2px; }
+
+    .sidebar__nav { padding: 0.625rem 0 1.5rem; flex: 1; }
+
+    .sidebar__home-link {
+      display: flex;
+      align-items: center;
+      gap: 0.375rem;
+      padding: 0.35rem 0.75rem 0.35rem 1rem;
+      font-size: 0.83rem;
+      color: #8b949e;
       text-decoration: none;
+      margin: 0 0.375rem 0.25rem;
+      border-radius: 5px;
+      transition: color 0.12s, background 0.12s;
     }
-    .topics__group-item a:hover { text-decoration: underline; }
-    .topics__group-item a:focus-visible {
-      outline: 2px solid var(--primary);
-      outline-offset: 2px;
-      border-radius: 2px;
-      text-decoration: underline;
+    .sidebar__home-link:hover { color: #c9d1d9; background: #21262d; text-decoration: none; }
+    .sidebar__home-link.active { color: #58a6ff; background: #21262d; }
+    .sidebar__home-link:focus-visible { outline: 2px solid #58a6ff; outline-offset: -2px; }
+
+    .sidebar__group { margin-bottom: 0.125rem; }
+
+    .sidebar__group-label {
+      font-size: 0.69rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      color: #484f58;
+      text-transform: uppercase;
+      padding: 0.5rem 1rem 0.2rem;
     }
 
-    /* ── Citation ── */
-    .citation-section {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      padding: 1.5rem;
-      margin-bottom: 2rem;
+    .sidebar__list { list-style: none; padding: 0; margin: 0; }
+
+    .sidebar__list-item a {
+      display: flex;
+      align-items: center;
+      gap: 0.375rem;
+      padding: 0.3rem 0.75rem 0.3rem 1rem;
+      font-size: 0.81rem;
+      color: #8b949e;
+      text-decoration: none;
+      margin: 0.5px 0.375rem;
+      border-radius: 5px;
+      transition: color 0.12s, background 0.12s;
     }
-    .citation-apa {
-      background: var(--bg);
-      border: 1px solid var(--border);
+    .sidebar__list-item a:hover { color: #c9d1d9; background: #21262d; text-decoration: none; }
+    .sidebar__list-item a.active { color: #58a6ff; background: #21262d; }
+    .sidebar__list-item a:focus-visible { outline: 2px solid #58a6ff; outline-offset: -2px; }
+
+    /* ── Main ── */
+    .site-main { min-width: 0; background: #0d1117; }
+
+    /* ── Mobile toggle ── */
+    .sidebar__toggle {
+      display: none;
+      position: fixed;
+      top: 0.75rem;
+      left: 0.75rem;
+      z-index: 20;
+      background: #161b22;
+      border: 1px solid #30363d;
+      color: #c9d1d9;
       border-radius: 6px;
-      padding: 0.875rem 1rem;
-      font-size: 0.9rem;
-      color: var(--text);
-      margin-bottom: 1rem;
-      line-height: 1.65;
-    }
-    .citation-apa a { color: var(--primary); }
-    .citation-bibtex {
-      display: block;
-      background: var(--bg);
-      border: 1px solid var(--border);
-      border-radius: 4px;
-      padding: 1rem;
-      font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
-      font-size: 0.85rem;
-      color: var(--text);
-      white-space: pre;
-      overflow-x: auto;
+      padding: 0.35rem 0.55rem;
+      font-size: 1rem;
       cursor: pointer;
-      transition: border-color 0.15s ease;
-      width: 100%;
+      line-height: 1;
     }
-    .citation-bibtex:hover { border-color: var(--primary); }
-    .citation-bibtex:focus-visible {
-      outline: 2px solid var(--primary);
-      outline-offset: 2px;
-    }
-    .citation-hint {
-      font-size: 0.8rem;
-      color: var(--text-muted);
-      margin-top: 0.4rem;
-    }
+    .sidebar__toggle:focus-visible { outline: 2px solid #58a6ff; outline-offset: 2px; }
 
-    /* ── Author ── */
-    .author-section {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      padding: 1.5rem;
-      margin-bottom: 2rem;
+    .sidebar__overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.6);
+      z-index: 14;
     }
-    .author-name {
-      font-weight: 600;
-      margin-bottom: 0.15rem;
-    }
-    .author-affil {
-      font-size: 0.875rem;
-      color: var(--text-muted);
-      margin-bottom: 1rem;
-    }
-    .author-table {
-      border-collapse: collapse;
-      width: 100%;
-      font-size: 0.875rem;
-      margin-bottom: 0.75rem;
-    }
-    .author-table th,
-    .author-table td {
-      border: 1px solid var(--border);
-      padding: 0.4rem 0.75rem;
-      text-align: left;
-    }
-    .author-table th {
-      background: var(--bg);
-      font-weight: 600;
-    }
-    .author-table a { color: var(--primary); }
-    .author-note {
-      font-size: 0.8rem;
-      color: var(--text-muted);
-    }
-
-    /* ── Footer ── */
-    footer {
-      border-top: 1px solid var(--border);
-      padding: 1.25rem 2rem;
-      font-size: 0.85rem;
-      color: var(--text-muted);
-      text-align: center;
-    }
-    footer a { color: var(--primary); }
-    footer p + p { margin-top: 0.25rem; }
-
-    /* ── Responsive ── */
-    @media (max-width: 600px) {
-      .site-header { padding: 1.5rem 1rem 1.25rem; }
-      main { padding: 1.5rem 1rem 2rem; }
-      .featured__item {
-        grid-template-columns: 1fr;
-        gap: 0;
-      }
-      .featured__arrow { display: none; }
-      footer { padding: 1rem; }
-    }
+    .sidebar__overlay.open { display: block; }
 
     /* ── Skip link ── */
     .skip-link {
-      position: absolute;
-      top: 0;
-      left: 0;
-      transform: translateY(-100%);
+      position: fixed;
+      top: -100%;
+      left: 50%;
+      transform: translateX(-50%);
       z-index: 100;
-      background: var(--primary);
-      color: #fff;
-      padding: 0.5rem 1rem;
-      border-radius: 0 0 4px 0;
+      background: #58a6ff;
+      color: #0d1117;
+      padding: 0.5rem 1.25rem;
+      border-radius: 0 0 6px 6px;
       font-size: 0.875rem;
       font-weight: 600;
       text-decoration: none;
-      transition: transform 0.15s ease;
+      transition: top 0.15s ease;
     }
-    .skip-link:focus-visible {
-      transform: translateY(0);
-      outline: 2px solid #fff;
-      outline-offset: -3px;
+    .skip-link:focus-visible { top: 0; outline: 2px solid #0d1117; outline-offset: -3px; }
+
+    /* ── Content ── */
+    .container { max-width: 900px; margin: 0 auto; padding: 28px 24px 48px; }
+
+    h1 { font-size: 1.8em; color: #f0f6fc; margin-bottom: 8px; text-wrap: balance; }
+    h2 { font-size: 1.3em; color: #e6edf3; margin: 28px 0 12px; border-bottom: 1px solid #30363d; padding-bottom: 6px; }
+
+    .subtitle { color: #8b949e; font-size: 1.02em; margin-bottom: 16px; }
+    .subtitle a { color: #58a6ff; }
+
+    /* Badges */
+    .badges { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 18px; }
+    .badge { display: inline-block; background: #21262d; border: 1px solid #30363d; border-radius: 20px; padding: 3px 12px; font-size: .8em; color: #8b949e; }
+    .badges img { height: 20px; }
+
+    /* Abstract */
+    .abstract {
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 8px;
+      padding: 16px 18px;
+      margin: 16px 0 20px;
+      font-size: .96em;
+      color: #c9d1d9;
+    }
+
+    /* CTA button */
+    .cta-btn {
+      display: inline-block;
+      background: #238636;
+      color: #fff;
+      padding: 0.5rem 1.2rem;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      text-decoration: none;
+      margin-bottom: 4px;
+      transition: background 0.12s;
+    }
+    .cta-btn:hover { background: #2ea043; text-decoration: none; }
+    .cta-btn:focus-visible { outline: 2px solid #58a6ff; outline-offset: 2px; }
+
+    /* Disease cards */
+    .disease-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 12px;
+      margin-bottom: 8px;
+    }
+
+    .disease-card {
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 10px;
+      padding: 16px;
+      text-decoration: none;
+      display: block;
+      transition: background 0.12s, border-color 0.12s;
+    }
+    .disease-card:hover { background: #1c2128; text-decoration: none; }
+    .disease-card:focus-visible { outline: 2px solid #58a6ff; outline-offset: 2px; }
+
+    .disease-card--ad:hover  { border-color: rgba(248,81,73,0.45); }
+    .disease-card--pd:hover  { border-color: rgba(227,179,65,0.45); }
+    .disease-card--ms:hover  { border-color: rgba(88,166,255,0.45); }
+    .disease-card--neuro:hover { border-color: rgba(210,168,255,0.45); }
+
+    .disease-card__name {
+      font-size: 0.97rem;
+      font-weight: 600;
+      display: block;
+      margin-bottom: 7px;
+    }
+    .disease-card--ad   .disease-card__name { color: #f85149; }
+    .disease-card--pd   .disease-card__name { color: #e3b341; }
+    .disease-card--ms   .disease-card__name { color: #58a6ff; }
+    .disease-card--neuro .disease-card__name { color: #d2a8ff; }
+
+    .disease-card__desc {
+      font-size: 0.83em;
+      color: #8b949e;
+      line-height: 1.55;
+      text-wrap: pretty;
+    }
+
+    /* Citation */
+    .citation {
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 8px;
+      padding: 18px;
+      margin-bottom: 8px;
+    }
+
+    .citation-apa {
+      background: #0d1117;
+      border: 1px solid #30363d;
+      border-radius: 6px;
+      padding: 11px 14px;
+      font-size: 0.9rem;
+      color: #c9d1d9;
+      margin-bottom: 10px;
+      line-height: 1.65;
+    }
+    .citation-apa a { color: #58a6ff; }
+
+    .citation-bibtex {
+      display: block;
+      background: #0d1117;
+      border: 1px solid #30363d;
+      border-radius: 6px;
+      padding: 12px 14px;
+      font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+      font-size: 0.84rem;
+      color: #7ee787;
+      white-space: pre;
+      overflow-x: auto;
+      cursor: pointer;
+      transition: border-color 0.12s;
+      width: 100%;
+    }
+    .citation-bibtex:hover { border-color: #58a6ff; }
+    .citation-bibtex:focus-visible { outline: 2px solid #58a6ff; outline-offset: 2px; }
+
+    .citation-hint { font-size: 0.78rem; color: #484f58; margin-top: 6px; }
+
+    /* Author */
+    .author-section {
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 8px;
+      padding: 18px;
+      margin-bottom: 8px;
+    }
+
+    .author-name { font-weight: 600; color: #e6edf3; margin-bottom: 3px; }
+    .author-affil { font-size: 0.875rem; color: #8b949e; margin-bottom: 14px; }
+
+    table { width: 100%; border-collapse: collapse; font-size: .87em; margin: 8px 0; }
+    th { background: #21262d; color: #cdd9e5; padding: 8px 10px; text-align: left; border-bottom: 2px solid #30363d; font-weight: 600; }
+    td { padding: 7px 10px; border-bottom: 1px solid #21262d; color: #8b949e; }
+    tr:hover td { background: #161b22; color: #c9d1d9; }
+    td a { color: #58a6ff; }
+
+    .author-note { font-size: 0.8rem; color: #8b949e; margin-top: 10px; }
+
+    /* Footer */
+    footer {
+      background: #161b22;
+      border-top: 1px solid #30363d;
+      padding: 18px 24px;
+      text-align: center;
+      color: #8b949e;
+      font-size: .85em;
+      margin-top: 32px;
+    }
+    footer a { color: #58a6ff; }
+    footer p + p { margin-top: 4px; }
+
+    /* ── Responsive ── */
+    @media (max-width: 768px) {
+      .site-layout { grid-template-columns: 1fr; }
+
+      .sidebar {
+        position: fixed;
+        left: calc(-220px - 1px);
+        top: 0;
+        width: 220px;
+        height: 100vh;
+        transition: left 0.2s ease;
+        z-index: 15;
+      }
+      .sidebar.open { left: 0; }
+
+      .sidebar__toggle { display: flex; align-items: center; justify-content: center; }
+
+      .site-main { padding-top: 2.75rem; }
+      .container { padding: 16px 16px 40px; }
     }
 
     @media (prefers-reduced-motion: reduce) {
-      .skip-link,
-      .lang-btn,
-      .site-header__cta,
-      .citation-bibtex { transition: none; }
+      .sidebar, .skip-link, .lang-btn,
+      .disease-card, .citation-bibtex, .cta-btn { transition: none; }
     }
   </style>
 </head>
 <body>
 
-<a href="#main-content" class="skip-link">Skip to main content</a>
+<a href="#main" class="skip-link">Skip to main content</a>
+<div class="sidebar__overlay" id="sidebar-overlay"></div>
 
-<header class="site-header">
-  <div class="site-header__inner">
-    <nav class="site-header__lang" aria-label="Language">
-      <button class="lang-btn" data-lang="en" aria-pressed="true" lang="en">EN</button><span class="site-header__lang-sep" aria-hidden="true">·</span><button class="lang-btn" data-lang="es" aria-pressed="false" lang="es">ES</button>
+<div class="site-layout">
+
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar__header">
+      <a href="index.html" class="sidebar__logo">🧪 Neuroinflammation</a>
+      <nav class="sidebar__lang" aria-label="Language">
+        <button class="lang-btn" data-lang="en" aria-pressed="true" lang="en">EN</button><span class="sidebar__lang-sep" aria-hidden="true">·</span><button class="lang-btn" data-lang="es" aria-pressed="false" lang="es">ES</button>
+      </nav>
+    </div>
+    <nav class="sidebar__nav" aria-label="Site navigation">
+      <a href="index.html" class="sidebar__home-link active" aria-current="page">🏠 Home</a>
+
+      <div class="sidebar__group">
+        <p class="sidebar__group-label" id="nav-diseases">Diseases</p>
+        <ul class="sidebar__list" aria-labelledby="nav-diseases">
+          <li class="sidebar__list-item"><a href="alzheimer.html">🧠 Alzheimer (AD)</a></li>
+          <li class="sidebar__list-item"><a href="parkinson.html">🤝 Parkinson (PD)</a></li>
+          <li class="sidebar__list-item"><a href="esclerosis-multiple.html">🧬 Multiple Sclerosis</a></li>
+          <li class="sidebar__list-item"><a href="neuroinflammation.html">🔥 Neuroinflammation</a></li>
+        </ul>
+      </div>
+
+      <div class="sidebar__group">
+        <p class="sidebar__group-label" id="nav-research">Research</p>
+        <ul class="sidebar__list" aria-labelledby="nav-research">
+          <li class="sidebar__list-item"><a href="epidemiology.html">🌍 Epidemiology</a></li>
+          <li class="sidebar__list-item"><a href="biomarkers.html">🔬 Biomarkers</a></li>
+          <li class="sidebar__list-item"><a href="neuroimaging.html">📡 Neuroimaging</a></li>
+          <li class="sidebar__list-item"><a href="genetics.html">🧬 Genetics</a></li>
+        </ul>
+      </div>
+
+      <div class="sidebar__group">
+        <p class="sidebar__group-label" id="nav-clinical">Clinical</p>
+        <ul class="sidebar__list" aria-labelledby="nav-clinical">
+          <li class="sidebar__list-item"><a href="treatments.html">💊 Treatments</a></li>
+          <li class="sidebar__list-item"><a href="clinical-trials.html">🔬 Clinical Trials</a></li>
+          <li class="sidebar__list-item"><a href="clinical-scales.html">📊 Clinical Scales</a></li>
+          <li class="sidebar__list-item"><a href="economic-burden.html">💰 Economic Burden</a></li>
+        </ul>
+      </div>
+
+      <div class="sidebar__group">
+        <p class="sidebar__group-label" id="nav-methods">Methods &amp; Data</p>
+        <ul class="sidebar__list" aria-labelledby="nav-methods">
+          <li class="sidebar__list-item"><a href="comparativas.html">⚖️ Comparative</a></li>
+          <li class="sidebar__list-item"><a href="methodology.html">📋 Methodology</a></li>
+          <li class="sidebar__list-item"><a href="data.html">📊 Data</a></li>
+          <li class="sidebar__list-item"><a href="sitemap.html">🗺 Sitemap</a></li>
+        </ul>
+      </div>
     </nav>
-    <h1 class="site-header__title" data-t="page-title">Neuroinflammation in Neurodegenerative Disorders</h1>
-    <p class="site-header__subtitle">
-      <span data-t="subtitle-text">Interactive dataset: Alzheimer's, Parkinson's, and Multiple Sclerosis</span>
-      &nbsp;·&nbsp;
-      DOI: <a href="https://doi.org/10.7910/DVN/X2TQQA">10.7910/DVN/X2TQQA</a>
-    </p>
-    <div class="site-header__badges">
-      <a href="https://orcid.org/0000-0002-8401-8018" rel="noopener noreferrer">
-        <img src="https://img.shields.io/badge/ORCID-0000--0002--8401--8018-green?logo=orcid" alt="ORCID: 0000-0002-8401-8018">
-      </a>
-      <a href="https://doi.org/10.5281/zenodo.19145316" rel="noopener noreferrer">
-        <img src="https://img.shields.io/badge/Collection_DOI-10.5281%2Fzenodo.19145316-blue?logo=zenodo" alt="Collection DOI: 10.5281/zenodo.19145316">
-      </a>
-      <img src="https://img.shields.io/badge/License-CC0_1.0-lightgrey" alt="License: CC0 1.0">
-      <img src="https://img.shields.io/badge/Data-FAIR_Compliant-brightgreen" alt="FAIR Data Compliant">
-    </div>
-    <a href="https://github.com/juanmoisesd/neuroinflammation-neurodegenerative" class="site-header__cta" rel="noopener noreferrer" data-t="cta">
-      Explore on GitHub
-    </a>
-  </div>
-</header>
+  </aside>
 
-<main id="main-content">
+  <div class="site-main">
+    <button class="sidebar__toggle" id="sidebar-toggle" aria-expanded="false" aria-controls="sidebar" aria-label="Toggle navigation">☰</button>
 
-  <section class="featured" aria-labelledby="featured-heading">
-    <h2 class="section-label" id="featured-heading" data-t="section-featured">Disease focus areas</h2>
-    <ul class="featured__list">
-      <li class="featured__item">
-        <div>
-          <a href="alzheimer.html" class="featured__item-name" data-t="disease-alzheimer">Alzheimer's Disease</a>
-          <p class="featured__item-desc" data-t="desc-alzheimer">Amyloid-&#946; and tau biomarkers, microglial activation, APOE genetics, neuroimaging, and approved treatments including lecanemab and donanemab.</p>
-        </div>
-        <span class="featured__arrow" aria-hidden="true">&#8594;</span>
-      </li>
-      <li class="featured__item">
-        <div>
-          <a href="parkinson.html" class="featured__item-name" data-t="disease-parkinson">Parkinson's Disease</a>
-          <p class="featured__item-desc" data-t="desc-parkinson">Alpha-synuclein pathology, dopaminergic neurodegeneration, CSF biomarkers, DaTSCAN neuroimaging, and motor and non-motor progression scales.</p>
-        </div>
-        <span class="featured__arrow" aria-hidden="true">&#8594;</span>
-      </li>
-      <li class="featured__item">
-        <div>
-          <a href="esclerosis-multiple.html" class="featured__item-name" data-t="disease-ms">Multiple Sclerosis</a>
-          <p class="featured__item-desc" data-t="desc-ms">Demyelination patterns, oligoclonal bands, neurofilament light chain biomarkers, lesion load on MRI, and disease-modifying therapy comparisons.</p>
-        </div>
-        <span class="featured__arrow" aria-hidden="true">&#8594;</span>
-      </li>
-      <li class="featured__item">
-        <div>
-          <a href="neuroinflammation.html" class="featured__item-name" data-t="disease-neuro">Neuroinflammatory Mechanisms</a>
-          <p class="featured__item-desc" data-t="desc-neuro">Shared inflammatory pathways across diseases: microglial activation states, astrogliosis, cytokine profiles, blood-brain barrier disruption, and NLRP3 inflammasome activity.</p>
-        </div>
-        <span class="featured__arrow" aria-hidden="true">&#8594;</span>
-      </li>
-    </ul>
-  </section>
+    <main id="main">
+      <div class="container">
 
-  <section class="topics" aria-labelledby="topics-heading">
-    <h2 class="section-label" id="topics-heading" data-t="section-topics">All sections</h2>
-    <div class="topics__grid">
-      <div>
-        <p class="topics__group-label" data-t="group-research">Research</p>
-        <ul class="topics__group-list">
-          <li class="topics__group-item"><a href="epidemiology.html" data-t="link-epidemiology">Epidemiology</a></li>
-          <li class="topics__group-item"><a href="biomarkers.html" data-t="link-biomarkers">Biomarkers</a></li>
-          <li class="topics__group-item"><a href="neuroimaging.html" data-t="link-neuroimaging">Neuroimaging</a></li>
-          <li class="topics__group-item"><a href="genetics.html" data-t="link-genetics">Genetics</a></li>
-        </ul>
-      </div>
-      <div>
-        <p class="topics__group-label" data-t="group-clinical">Clinical</p>
-        <ul class="topics__group-list">
-          <li class="topics__group-item"><a href="treatments.html" data-t="link-treatments">Treatments</a></li>
-          <li class="topics__group-item"><a href="clinical-trials.html" data-t="link-trials">Clinical Trials</a></li>
-          <li class="topics__group-item"><a href="clinical-scales.html" data-t="link-scales">Clinical Scales</a></li>
-          <li class="topics__group-item"><a href="economic-burden.html" data-t="link-burden">Economic Burden</a></li>
-        </ul>
-      </div>
-      <div>
-        <p class="topics__group-label" data-t="group-methods">Methods &amp; Data</p>
-        <ul class="topics__group-list">
-          <li class="topics__group-item"><a href="comparativas.html" data-t="link-comparative">Comparative Analysis</a></li>
-          <li class="topics__group-item"><a href="methodology.html" data-t="link-methodology">Methodology</a></li>
-          <li class="topics__group-item"><a href="data.html" data-t="link-data">Data</a></li>
-          <li class="topics__group-item"><a href="sitemap.html" data-t="link-sitemap">Sitemap</a></li>
-        </ul>
-      </div>
-    </div>
-  </section>
+        <h1 data-t="page-title">🧪 Neuroinflammation in Neurodegenerative Disorders</h1>
+        <p class="subtitle">
+          <span data-t="subtitle-text">Open science dataset: Alzheimer's, Parkinson's, and Multiple Sclerosis</span>
+          &nbsp;·&nbsp; DOI: <a href="https://doi.org/10.7910/DVN/X2TQQA" rel="noopener noreferrer">10.7910/DVN/X2TQQA</a>
+        </p>
 
-  <section class="citation-section" aria-labelledby="citation-heading">
-    <h2 class="section-label" id="citation-heading" data-t="section-cite">Cite this dataset</h2>
-    <div class="citation-apa">
-      <strong>APA 7:</strong><br>
-      De la Serna Tuya, J. M. (2025). <em>Neuroinflammation in Neurodegenerative Disorders</em> [Dataset]. Harvard Dataverse. <a href="https://doi.org/10.7910/DVN/X2TQQA" rel="noopener noreferrer">https://doi.org/10.7910/DVN/X2TQQA</a>
-    </div>
-    <code
-      class="citation-bibtex"
-      id="bibtex-block"
-      tabindex="0"
-      role="button"
-      aria-label="BibTeX citation — click to copy"
-    >@dataset{delaserna2025_neuroinflammation,
+        <div class="badges">
+          <a href="https://orcid.org/0000-0002-8401-8018" rel="noopener noreferrer">
+            <img src="https://img.shields.io/badge/ORCID-0000--0002--8401--8018-green?logo=orcid" alt="ORCID: 0000-0002-8401-8018">
+          </a>
+          <a href="https://doi.org/10.5281/zenodo.19145316" rel="noopener noreferrer">
+            <img src="https://img.shields.io/badge/Collection_DOI-10.5281%2Fzenodo.19145316-blue?logo=zenodo" alt="Collection DOI: 10.5281/zenodo.19145316">
+          </a>
+          <span class="badge">CC0 1.0</span>
+          <span class="badge">FAIR Compliant</span>
+        </div>
+
+        <div class="abstract">
+          <strong data-t="abstract-label">About this dataset:</strong>
+          <span data-t="abstract-body"> Curated neuroinflammation data across three major neurodegenerative disorders. Every number has a citation. Covers CSF biomarkers, neuroimaging parameters, genetic risk factors, clinical progression scales, approved treatments, epidemiology, and comparative analyses. Published under CC0 1.0.</span>
+        </div>
+
+        <a href="https://github.com/juanmoisesd/neuroinflammation-neurodegenerative" class="cta-btn" rel="noopener noreferrer" data-t="cta">View on GitHub</a>
+
+        <h2 data-t="section-featured">Disease focus areas</h2>
+        <div class="disease-grid">
+          <a href="alzheimer.html" class="disease-card disease-card--ad">
+            <span class="disease-card__name" data-t="disease-alzheimer">🧠 Alzheimer's Disease (AD)</span>
+            <p class="disease-card__desc" data-t="desc-alzheimer">Amyloid-&#946; and tau biomarkers, microglial activation, APOE genetics, neuroimaging, and approved treatments including lecanemab and donanemab.</p>
+          </a>
+          <a href="parkinson.html" class="disease-card disease-card--pd">
+            <span class="disease-card__name" data-t="disease-parkinson">🤝 Parkinson's Disease (PD)</span>
+            <p class="disease-card__desc" data-t="desc-parkinson">Alpha-synuclein pathology, dopaminergic neurodegeneration, CSF biomarkers, DaTSCAN neuroimaging, and motor and non-motor progression scales.</p>
+          </a>
+          <a href="esclerosis-multiple.html" class="disease-card disease-card--ms">
+            <span class="disease-card__name" data-t="disease-ms">🧬 Multiple Sclerosis (MS)</span>
+            <p class="disease-card__desc" data-t="desc-ms">Demyelination patterns, oligoclonal bands, neurofilament light chain biomarkers, lesion load on MRI, and disease-modifying therapy comparisons.</p>
+          </a>
+          <a href="neuroinflammation.html" class="disease-card disease-card--neuro">
+            <span class="disease-card__name" data-t="disease-neuro">🔥 Neuroinflammatory Mechanisms</span>
+            <p class="disease-card__desc" data-t="desc-neuro">Shared inflammatory pathways: microglial activation states, astrogliosis, cytokine profiles, blood-brain barrier disruption, and NLRP3 inflammasome activity.</p>
+          </a>
+        </div>
+
+        <h2 data-t="section-cite">How to cite</h2>
+        <div class="citation">
+          <div class="citation-apa">
+            <strong>APA 7:</strong><br>
+            De la Serna Tuya, J. M. (2025). <em>Neuroinflammation in Neurodegenerative Disorders</em> [Dataset]. Harvard Dataverse. <a href="https://doi.org/10.7910/DVN/X2TQQA" rel="noopener noreferrer">https://doi.org/10.7910/DVN/X2TQQA</a>
+          </div>
+          <code
+            class="citation-bibtex"
+            id="bibtex-block"
+            tabindex="0"
+            role="button"
+            aria-label="BibTeX citation — click to copy"
+          >@dataset{delaserna2025_neuroinflammation,
   author    = {De la Serna Tuya, Juan Mois{\'e}s},
   title     = {Neuroinflammation in Neurodegenerative Disorders},
   year      = {2025},
@@ -546,147 +542,106 @@
   url       = {https://doi.org/10.7910/DVN/X2TQQA},
   note      = {ORCID: 0000-0002-8401-8018}
 }</code>
-    <p class="citation-hint" data-t="cite-hint">Click the BibTeX block to copy to clipboard.</p>
-  </section>
+          <p class="citation-hint" data-t="cite-hint">Click the BibTeX block to copy to clipboard.</p>
+        </div>
 
-  <section class="author-section" aria-labelledby="author-heading">
-    <h2 class="section-label" id="author-heading" data-t="section-author">About the author</h2>
-    <p class="author-name">Juan Mois&#233;s de la Serna Tuya</p>
-    <p class="author-affil" data-t="author-affil">Researcher &#183; Universidad Internacional de La Rioja (UNIR)</p>
-    <table class="author-table">
-      <thead>
-        <tr>
-          <th scope="col" data-t="table-identifier">Identifier</th>
-          <th scope="col" data-t="table-link">Link</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>ORCID</td>
-          <td><a href="https://orcid.org/0000-0002-8401-8018" rel="noopener noreferrer">0000-0002-8401-8018</a></td>
-        </tr>
-        <tr>
-          <td>LinkedIn</td>
-          <td><a href="https://www.linkedin.com/in/juanmoisesdelaserna/" rel="noopener noreferrer">juanmoisesdelaserna</a></td>
-        </tr>
-        <tr>
-          <td>Scopus</td>
-          <td><a href="https://www.scopus.com/authid/detail.uri?authorId=26632846700" rel="noopener noreferrer">26632846700</a></td>
-        </tr>
-        <tr>
-          <td>ResearcherID</td>
-          <td><a href="https://www.webofscience.com/wos/author/record/M-8296-2019" rel="noopener noreferrer">M-8296-2019</a></td>
-        </tr>
-        <tr>
-          <td>ResearchGate</td>
-          <td><a href="https://www.researchgate.net/profile/Juan_De_La_Serna_Tuya" rel="noopener noreferrer">Profile</a></td>
-        </tr>
-        <tr>
-          <td>Institution</td>
-          <td><a href="https://www.unir.net" rel="noopener noreferrer">Universidad Internacional de La Rioja (UNIR)</a></td>
-        </tr>
-      </tbody>
-    </table>
-    <p class="author-note" data-t="author-note">290+ scientific works &#183; 500+ DOIs &#183; 90+ open datasets</p>
-  </section>
+        <h2 data-t="section-author">About the author</h2>
+        <div class="author-section">
+          <p class="author-name">Juan Mois&#233;s de la Serna Tuya</p>
+          <p class="author-affil" data-t="author-affil">Researcher &#183; Universidad Internacional de La Rioja (UNIR)</p>
+          <table>
+            <thead>
+              <tr>
+                <th scope="col" data-t="table-identifier">Identifier</th>
+                <th scope="col" data-t="table-link">Link</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>ORCID</td><td><a href="https://orcid.org/0000-0002-8401-8018" rel="noopener noreferrer">0000-0002-8401-8018</a></td></tr>
+              <tr><td>LinkedIn</td><td><a href="https://www.linkedin.com/in/juanmoisesdelaserna/" rel="noopener noreferrer">juanmoisesdelaserna</a></td></tr>
+              <tr><td>Scopus</td><td><a href="https://www.scopus.com/authid/detail.uri?authorId=26632846700" rel="noopener noreferrer">26632846700</a></td></tr>
+              <tr><td>ResearcherID</td><td><a href="https://www.webofscience.com/wos/author/record/M-8296-2019" rel="noopener noreferrer">M-8296-2019</a></td></tr>
+              <tr><td>ResearchGate</td><td><a href="https://www.researchgate.net/profile/Juan_De_La_Serna_Tuya" rel="noopener noreferrer">Profile</a></td></tr>
+              <tr><td>Institution</td><td><a href="https://www.unir.net" rel="noopener noreferrer">Universidad Internacional de La Rioja (UNIR)</a></td></tr>
+            </tbody>
+          </table>
+          <p class="author-note" data-t="author-note">290+ scientific works &#183; 500+ DOIs &#183; 90+ open datasets</p>
+        </div>
 
-</main>
+      </div>
+    </main>
 
-<footer>
-  <p>&#169; 2025 Juan Mois&#233;s de la Serna Tuya &#183; <a href="https://orcid.org/0000-0002-8401-8018">ORCID: 0000-0002-8401-8018</a> &#183; License: <a href="https://creativecommons.org/publicdomain/zero/1.0/" rel="noopener noreferrer">CC0 1.0</a></p>
-  <p>
-    <a href="https://github.com/juanmoisesd/neuroinflammation-neurodegenerative/blob/main/ABOUT_THE_AUTHOR.md" rel="noopener noreferrer" data-t="footer-about">About the author</a>
-    &#183;
-    <a href="https://github.com/juanmoisesd/neuroinflammation-neurodegenerative/blob/main/GLOSSARY.md" rel="noopener noreferrer" data-t="footer-glossary">Glossary</a>
-    &#183;
-    <a href="https://github.com/juanmoisesd/neuroinflammation-neurodegenerative/blob/main/CITATION_GUIDE.md" rel="noopener noreferrer" data-t="footer-citation-guide">Citation Guide</a>
-  </p>
-</footer>
+    <footer>
+      <p>&#169; 2025 Juan Mois&#233;s de la Serna Tuya &nbsp;&#183;&nbsp; <a href="https://orcid.org/0000-0002-8401-8018" rel="noopener noreferrer">ORCID: 0000-0002-8401-8018</a> &nbsp;&#183;&nbsp; License: <a href="https://creativecommons.org/publicdomain/zero/1.0/" rel="noopener noreferrer">CC0 1.0</a></p>
+      <p>
+        <a href="https://github.com/juanmoisesd/neuroinflammation-neurodegenerative/blob/main/ABOUT_THE_AUTHOR.md" rel="noopener noreferrer" data-t="footer-about">About the author</a>
+        &nbsp;&#183;&nbsp;
+        <a href="https://github.com/juanmoisesd/neuroinflammation-neurodegenerative/blob/main/GLOSSARY.md" rel="noopener noreferrer" data-t="footer-glossary">Glossary</a>
+        &nbsp;&#183;&nbsp;
+        <a href="https://github.com/juanmoisesd/neuroinflammation-neurodegenerative/blob/main/CITATION_GUIDE.md" rel="noopener noreferrer" data-t="footer-citation-guide">Citation Guide</a>
+      </p>
+    </footer>
+  </div><!-- /.site-main -->
+
+</div><!-- /.site-layout -->
 
 <script>
+/* ── i18n ── */
 (function () {
   var T = {
     en: {
-      'page-title':       'Neuroinflammation in Neurodegenerative Disorders',
-      'subtitle-text':    'Interactive dataset: Alzheimer’s, Parkinson’s, and Multiple Sclerosis',
-      'cta':              'Explore on GitHub',
-      'section-featured': 'Disease focus areas',
-      'section-topics':   'All sections',
-      'section-cite':     'Cite this dataset',
-      'section-author':   'About the author',
-      'disease-alzheimer':'Alzheimer’s Disease',
-      'disease-parkinson':'Parkinson’s Disease',
-      'disease-ms':       'Multiple Sclerosis',
-      'disease-neuro':    'Neuroinflammatory Mechanisms',
-      'desc-alzheimer':   'Amyloid-β and tau biomarkers, microglial activation, APOE genetics, neuroimaging, and approved treatments including lecanemab and donanemab.',
-      'desc-parkinson':   'Alpha-synuclein pathology, dopaminergic neurodegeneration, CSF biomarkers, DaTSCAN neuroimaging, and motor and non-motor progression scales.',
-      'desc-ms':          'Demyelination patterns, oligoclonal bands, neurofilament light chain biomarkers, lesion load on MRI, and disease-modifying therapy comparisons.',
-      'desc-neuro':       'Shared inflammatory pathways across diseases: microglial activation states, astrogliosis, cytokine profiles, blood-brain barrier disruption, and NLRP3 inflammasome activity.',
-      'group-research':   'Research',
-      'group-clinical':   'Clinical',
-      'group-methods':    'Methods & Data',
-      'link-epidemiology':'Epidemiology',
-      'link-biomarkers':  'Biomarkers',
-      'link-neuroimaging':'Neuroimaging',
-      'link-genetics':    'Genetics',
-      'link-treatments':  'Treatments',
-      'link-trials':      'Clinical Trials',
-      'link-scales':      'Clinical Scales',
-      'link-burden':      'Economic Burden',
-      'link-comparative': 'Comparative Analysis',
-      'link-methodology': 'Methodology',
-      'link-data':        'Data',
-      'link-sitemap':     'Sitemap',
-      'cite-hint':        'Click the BibTeX block to copy to clipboard.',
-      'author-affil':     'Researcher · Universidad Internacional de La Rioja (UNIR)',
-      'table-identifier': 'Identifier',
-      'table-link':       'Link',
-      'author-note':      '290+ scientific works · 500+ DOIs · 90+ open datasets',
-      'footer-about':     'About the author',
-      'footer-glossary':  'Glossary',
+      'page-title':      '🧪 Neuroinflammation in Neurodegenerative Disorders',
+      'subtitle-text':   'Open science dataset: Alzheimer’s, Parkinson’s, and Multiple Sclerosis',
+      'abstract-label':  'About this dataset:',
+      'abstract-body':   ' Curated neuroinflammation data across three major neurodegenerative disorders. Every number has a citation. Covers CSF biomarkers, neuroimaging parameters, genetic risk factors, clinical progression scales, approved treatments, epidemiology, and comparative analyses. Published under CC0 1.0.',
+      'cta':             'View on GitHub',
+      'section-featured':'Disease focus areas',
+      'section-cite':    'How to cite',
+      'section-author':  'About the author',
+      'disease-alzheimer':'🧠 Alzheimer’s Disease (AD)',
+      'disease-parkinson':'🤝 Parkinson’s Disease (PD)',
+      'disease-ms':      '🧬 Multiple Sclerosis (MS)',
+      'disease-neuro':   '🔥 Neuroinflammatory Mechanisms',
+      'desc-alzheimer':  'Amyloid-β and tau biomarkers, microglial activation, APOE genetics, neuroimaging, and approved treatments including lecanemab and donanemab.',
+      'desc-parkinson':  'Alpha-synuclein pathology, dopaminergic neurodegeneration, CSF biomarkers, DaTSCAN neuroimaging, and motor and non-motor progression scales.',
+      'desc-ms':         'Demyelination patterns, oligoclonal bands, neurofilament light chain biomarkers, lesion load on MRI, and disease-modifying therapy comparisons.',
+      'desc-neuro':      'Shared inflammatory pathways: microglial activation states, astrogliosis, cytokine profiles, blood-brain barrier disruption, and NLRP3 inflammasome activity.',
+      'cite-hint':       'Click the BibTeX block to copy to clipboard.',
+      'author-affil':    'Researcher · Universidad Internacional de La Rioja (UNIR)',
+      'table-identifier':'Identifier',
+      'table-link':      'Link',
+      'author-note':     '290+ scientific works · 500+ DOIs · 90+ open datasets',
+      'footer-about':    'About the author',
+      'footer-glossary': 'Glossary',
       'footer-citation-guide': 'Citation Guide',
-      'copy-success':     '✓ Copied to clipboard'
+      'copy-success':    '✓ Copied to clipboard'
     },
     es: {
-      'page-title':       'Neuroinflamación en Trastornos Neurodegenerativos',
-      'subtitle-text':    'Conjunto de datos interactivo: Alzheimer, Parkinson y Esclerosis Múltiple',
-      'cta':              'Explorar en GitHub',
-      'section-featured': 'Áreas de enfermedad',
-      'section-topics':   'Todas las secciones',
-      'section-cite':     'Citar este conjunto de datos',
-      'section-author':   'Sobre el autor',
-      'disease-alzheimer':'Enfermedad de Alzheimer',
-      'disease-parkinson':'Enfermedad de Parkinson',
-      'disease-ms':       'Esclerosis Múltiple',
-      'disease-neuro':    'Mecanismos Neuroinflamatorios',
-      'desc-alzheimer':   'Biomarcadores de amiloide-β y tau, activación microglial, genética APOE, neuroimagen y tratamientos aprobados como lecanemab y donanemab.',
-      'desc-parkinson':   'Patología de alfa-sinucleína, neurodegeneración dopaminérgica, biomarcadores en LCR, neuroimagen DAT-SPECT y escalas de progresión motora y no motora.',
-      'desc-ms':          'Patrones de desmielinización, bandas oligoclonales, biomarcadores de cadena ligera de neurofilamentos, carga lesional en RM y comparación de terapias modificadoras.',
-      'desc-neuro':       'Vías inflamatorias compartidas entre enfermedades: estados de activación microglial, astrogliosis, perfiles de citocinas, alteración de la barrera hematoencefálica e inflamasoma NLRP3.',
-      'group-research':   'Investigación',
-      'group-clinical':   'Clínico',
-      'group-methods':    'Métodos y Datos',
-      'link-epidemiology':'Epidemiología',
-      'link-biomarkers':  'Biomarcadores',
-      'link-neuroimaging':'Neuroimagen',
-      'link-genetics':    'Genética',
-      'link-treatments':  'Tratamientos',
-      'link-trials':      'Ensayos Clínicos',
-      'link-scales':      'Escalas Clínicas',
-      'link-burden':      'Carga Económica',
-      'link-comparative': 'Análisis Comparativo',
-      'link-methodology': 'Metodología',
-      'link-data':        'Datos',
-      'link-sitemap':     'Mapa del sitio',
-      'cite-hint':        'Haz clic en el bloque BibTeX para copiar al portapapeles.',
-      'author-affil':     'Investigador · Universidad Internacional de La Rioja (UNIR)',
-      'table-identifier': 'Identificador',
-      'table-link':       'Enlace',
-      'author-note':      '290+ publicaciones científicas · 500+ DOIs · 90+ conjuntos de datos abiertos',
-      'footer-about':     'Sobre el autor',
-      'footer-glossary':  'Glosario',
+      'page-title':      '🧪 Neuroinflamación en Trastornos Neurodegenerativos',
+      'subtitle-text':   'Conjunto de datos interactivo: Alzheimer, Parkinson y Esclerosis Múltiple',
+      'abstract-label':  'Acerca de este conjunto de datos:',
+      'abstract-body':   ' Datos curados de neuroinflamación en tres trastornos neurodegenerativos principales. Cada número tiene una cita. Incluye biomarcadores en LCR, parámetros de neuroimagen, factores de riesgo genético, escalas de progresión clínica, tratamientos aprobados, epidemiología y análisis comparativos. Publicado bajo CC0 1.0.',
+      'cta':             'Ver en GitHub',
+      'section-featured':'Áreas de enfermedad',
+      'section-cite':    'Cómo citar',
+      'section-author':  'Sobre el autor',
+      'disease-alzheimer':'🧠 Enfermedad de Alzheimer (EA)',
+      'disease-parkinson':'🤝 Enfermedad de Parkinson (EP)',
+      'disease-ms':      '🧬 Esclerosis Múltiple (EM)',
+      'disease-neuro':   '🔥 Mecanismos Neuroinflamatorios',
+      'desc-alzheimer':  'Biomarcadores de amiloide-β y tau, activación microglial, genética APOE, neuroimagen y tratamientos aprobados como lecanemab y donanemab.',
+      'desc-parkinson':  'Patología de alfa-sinucleína, neurodegeneración dopaminérgica, biomarcadores en LCR, neuroimagen DAT-SPECT y escalas de progresión motora y no motora.',
+      'desc-ms':         'Patrones de desmielinización, bandas oligoclonales, biomarcadores de cadena ligera de neurofilamentos, carga lesional en RM y comparación de terapias modificadoras.',
+      'desc-neuro':      'Vías inflamatorias compartidas: estados de activación microglial, astrogliosis, perfiles de citocinas, alteración de la barrera hematoencefálica e inflamasoma NLRP3.',
+      'cite-hint':       'Haz clic en el bloque BibTeX para copiar al portapapeles.',
+      'author-affil':    'Investigador · Universidad Internacional de La Rioja (UNIR)',
+      'table-identifier':'Identificador',
+      'table-link':      'Enlace',
+      'author-note':     '290+ publicaciones científicas · 500+ DOIs · 90+ conjuntos de datos abiertos',
+      'footer-about':    'Sobre el autor',
+      'footer-glossary': 'Glosario',
       'footer-citation-guide': 'Guía de citas',
-      'copy-success':     '✓ Copiado al portapapeles'
+      'copy-success':    '✓ Copiado al portapapeles'
     }
   };
 
@@ -709,29 +664,26 @@
   }
 
   document.querySelectorAll('.lang-btn').forEach(function (btn) {
-    btn.addEventListener('click', function () {
-      applyLang(btn.getAttribute('data-lang'));
-    });
+    btn.addEventListener('click', function () { applyLang(btn.getAttribute('data-lang')); });
   });
 
   if (currentLang !== 'en') applyLang(currentLang);
 }());
 
+/* ── BibTeX copy ── */
 (function () {
-  const block = document.getElementById('bibtex-block');
+  var block = document.getElementById('bibtex-block');
   if (!block) return;
-
-  const originalText = block.textContent;
-
+  var originalText = block.textContent;
   var COPY_MSGS = { en: '✓ Copied to clipboard', es: '✓ Copiado al portapapeles' };
 
   function copyBibtex() {
     if (navigator.clipboard) {
-      navigator.clipboard.writeText(originalText).then(function () {
+      navigator.clipboard.writeText(originalText.trim()).then(function () {
         var lang = localStorage.getItem('lang') || 'en';
         block.textContent = COPY_MSGS[lang] || COPY_MSGS.en;
         setTimeout(function () { block.textContent = originalText; }, 2000);
-      }).catch(function () { fallbackSelect(); });
+      }).catch(fallbackSelect);
     } else {
       fallbackSelect();
     }
@@ -747,10 +699,36 @@
 
   block.addEventListener('click', copyBibtex);
   block.addEventListener('keydown', function (e) {
-    if (e.key === 'Enter' || e.key === ' ') {
-      e.preventDefault();
-      copyBibtex();
-    }
+    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); copyBibtex(); }
+  });
+}());
+
+/* ── Sidebar toggle (mobile) ── */
+(function () {
+  var toggle  = document.getElementById('sidebar-toggle');
+  var sidebar = document.getElementById('sidebar');
+  var overlay = document.getElementById('sidebar-overlay');
+  if (!toggle) return;
+
+  function openSidebar() {
+    sidebar.classList.add('open');
+    overlay.classList.add('open');
+    toggle.setAttribute('aria-expanded', 'true');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeSidebar() {
+    sidebar.classList.remove('open');
+    overlay.classList.remove('open');
+    toggle.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+  }
+
+  toggle.addEventListener('click', function () {
+    sidebar.classList.contains('open') ? closeSidebar() : openSidebar();
+  });
+  overlay.addEventListener('click', closeSidebar);
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && sidebar.classList.contains('open')) closeSidebar();
   });
 }());
 </script>

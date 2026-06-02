@@ -15,10 +15,10 @@ h2{font-size:1.35em;color:#e6edf3;margin:28px 0 12px;border-bottom:1px solid #30
 h3{font-size:1.1em;color:#cdd9e5;margin:18px 0 8px}
 .subtitle{color:#8b949e;font-size:1.05em;margin-bottom:20px}
 .badge{display:inline-block;background:#21262d;border:1px solid #30363d;border-radius:20px;padding:3px 12px;font-size:.8em;color:#8b949e;margin:0 4px 4px 0}
-.abstract{background:#161b22;border-left:4px solid #d2a8ff;border-radius:0 8px 8px 0;padding:18px 20px;margin:20px 0;font-size:.97em}
+.abstract{background:#161b22;border:1px solid #30363d;border-radius:8px;padding:18px 20px;margin:20px 0;font-size:.97em}
 .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(175px,1fr));gap:14px;margin:20px 0}
 .kpi{background:#161b22;border:1px solid #30363d;border-radius:10px;padding:16px;text-align:center}
-.kpi .val{font-size:1.9em;font-weight:700;color:#d2a8ff}
+.kpi .val{font-size:1.9em;font-weight:700;color:#e6edf3}
 .kpi .lbl{font-size:.82em;color:#8b949e;margin-top:4px}
 .chart-wrap{background:#161b22;border:1px solid #30363d;border-radius:10px;padding:16px;margin:16px 0}
 .citation{background:#161b22;border:1px solid #30363d;border-radius:8px;padding:18px;margin:20px 0;font-size:.85em}
@@ -28,11 +28,52 @@ th{background:#21262d;color:#cdd9e5;padding:10px 8px;text-align:left;border-bott
 td{padding:8px 8px;border-bottom:1px solid #21262d;color:#8b949e}
 tr:hover td{background:#161b22;color:#c9d1d9}
 .ad{color:#f85149}.pd{color:#e3b341}.ms{color:#58a6ff}
-footer{background:#161b22;border-top:1px solid #30363d;padding:20px;text-align:center;color:#484f58;font-size:.85em;margin-top:40px}
+footer{background:#161b22;border-top:1px solid #30363d;padding:20px;text-align:center;color:#8b949e;font-size:.85em;margin-top:40px}
+.citation pre{cursor:pointer;transition:border-color .12s}.citation pre:hover{border-color:#58a6ff}.citation pre:focus-visible{outline:2px solid #58a6ff;outline-offset:2px}
+.site-layout{display:grid;grid-template-columns:220px 1fr;min-height:100vh}.sidebar{background:#161b22;border-right:1px solid #30363d;position:sticky;top:0;height:100vh;overflow-y:auto;display:flex;flex-direction:column;scrollbar-width:thin;scrollbar-color:#30363d #161b22;z-index:10}.sidebar__header{padding:1.125rem 1rem .875rem;border-bottom:1px solid #30363d}.sidebar__logo{display:block;font-weight:700;font-size:.875rem;color:#f0f6fc;text-decoration:none;line-height:1.3}.sidebar__logo:hover{color:#58a6ff;text-decoration:none}.sidebar__nav{padding:.625rem 0 1.5rem;flex:1}.sidebar__home-link{display:flex;align-items:center;gap:.375rem;padding:.35rem .75rem .35rem 1rem;font-size:.83rem;color:#8b949e;text-decoration:none;margin:0 .375rem .25rem;border-radius:5px;transition:color .12s,background .12s}.sidebar__home-link:hover{color:#c9d1d9;background:#21262d;text-decoration:none}.sidebar__home-link.active{color:#58a6ff;background:#21262d}.sidebar__home-link:focus-visible{outline:2px solid #58a6ff;outline-offset:-2px}.sidebar__group{margin-bottom:.125rem}.sidebar__group-label{font-size:.69rem;font-weight:600;letter-spacing:.04em;color:#484f58;text-transform:uppercase;padding:.5rem 1rem .2rem}.sidebar__list{list-style:none;padding:0;margin:0}.sidebar__list-item a{display:flex;align-items:center;gap:.375rem;padding:.3rem .75rem .3rem 1rem;font-size:.81rem;color:#8b949e;text-decoration:none;margin:.5px .375rem;border-radius:5px;transition:color .12s,background .12s}.sidebar__list-item a:hover{color:#c9d1d9;background:#21262d;text-decoration:none}.sidebar__list-item a.active{color:#58a6ff;background:#21262d}.sidebar__list-item a:focus-visible{outline:2px solid #58a6ff;outline-offset:-2px}.site-main{min-width:0;background:#0d1117}.sidebar__toggle{display:none;position:fixed;top:.75rem;left:.75rem;z-index:20;background:#161b22;border:1px solid #30363d;color:#c9d1d9;border-radius:6px;padding:.35rem .55rem;font-size:1rem;cursor:pointer;line-height:1}.sidebar__toggle:focus-visible{outline:2px solid #58a6ff;outline-offset:2px}.sidebar__overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:14}.sidebar__overlay.open{display:block}.skip-link{position:fixed;top:-100%;left:50%;transform:translateX(-50%);z-index:100;background:#58a6ff;color:#0d1117;padding:.5rem 1.25rem;border-radius:0 0 6px 6px;font-size:.875rem;font-weight:600;text-decoration:none;transition:top .15s ease}.skip-link:focus-visible{top:0;outline:2px solid #0d1117;outline-offset:-3px}@media(max-width:768px){.site-layout{grid-template-columns:1fr}.sidebar{position:fixed;left:calc(-220px - 1px);top:0;width:220px;height:100vh;transition:left .2s ease;z-index:15}.sidebar.open{left:0}.sidebar__toggle{display:flex;align-items:center;justify-content:center}.site-main{padding-top:2.75rem}.container{padding:16px 16px 40px}}@media(prefers-reduced-motion:reduce){.sidebar,.skip-link,.sidebar__list-item a,.sidebar__home-link{transition:none}}
 </style><script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
 <title>🧬 Genetics and Risk Factors in Neurodegenerative Diseases</title>
 </head><body>
-<nav><span class="logo">🧪 Neuroinflammation</span><a href="index.html" >🏠 Home</a><a href="alzheimer.html" >🧠 Alzheimer (AD)</a><a href="parkinson.html" >🤝 Parkinson (PD)</a><a href="esclerosis-multiple.html" >🧬 Multiple Sclerosis</a><a href="biomarkers.html" >🔬 Biomarkers</a><a href="neuroimaging.html" >📡 Neuroimaging</a><a href="clinical-scales.html" >📊 Clinical Scales</a><a href="epidemiology.html" >🌍 Epidemiology</a><a href="genetics.html" class="active">🧬 Genetics</a><a href="treatments.html" >💊 Treatments</a><a href="clinical-trials.html" >🔬 Clinical Trials</a><a href="economic-burden.html" >💰 Economic Burden</a><a href="neuroinflammation.html" >🔥 Neuroinflammation</a><a href="comparativas.html" >⚖️ Comparative Analysis</a><a href="methodology.html" >📋 Methodology</a><a href="data.html" >📊 Data</a><a href="sitemap.html" >🗺 Sitemap</a></nav>
+<a href="#main" class="skip-link">Skip to main content</a>
+<div class="sidebar__overlay" id="sidebar-overlay"></div>
+<div class="site-layout">
+<aside class="sidebar" id="sidebar">
+<div class="sidebar__header"><a href="index.html" class="sidebar__logo">🧪 Neuroinflammation</a></div>
+<nav class="sidebar__nav" aria-label="Site navigation">
+<a href="index.html" class="sidebar__home-link">🏠 Home</a>
+<div class="sidebar__group"><p class="sidebar__group-label" id="nav-diseases">Diseases</p>
+<ul class="sidebar__list" aria-labelledby="nav-diseases">
+<li class="sidebar__list-item"><a href="alzheimer.html">🧠 Alzheimer (AD)</a></li>
+<li class="sidebar__list-item"><a href="parkinson.html">🤝 Parkinson (PD)</a></li>
+<li class="sidebar__list-item"><a href="esclerosis-multiple.html">🧬 Multiple Sclerosis</a></li>
+<li class="sidebar__list-item"><a href="neuroinflammation.html">🔥 Neuroinflammation</a></li>
+</ul></div>
+<div class="sidebar__group"><p class="sidebar__group-label" id="nav-research">Research</p>
+<ul class="sidebar__list" aria-labelledby="nav-research">
+<li class="sidebar__list-item"><a href="epidemiology.html">🌍 Epidemiology</a></li>
+<li class="sidebar__list-item"><a href="biomarkers.html">🔬 Biomarkers</a></li>
+<li class="sidebar__list-item"><a href="neuroimaging.html">📡 Neuroimaging</a></li>
+<li class="sidebar__list-item"><a href="genetics.html" class="active" aria-current="page">🧬 Genetics</a></li>
+</ul></div>
+<div class="sidebar__group"><p class="sidebar__group-label" id="nav-clinical">Clinical</p>
+<ul class="sidebar__list" aria-labelledby="nav-clinical">
+<li class="sidebar__list-item"><a href="treatments.html">💊 Treatments</a></li>
+<li class="sidebar__list-item"><a href="clinical-trials.html">🔬 Clinical Trials</a></li>
+<li class="sidebar__list-item"><a href="clinical-scales.html">📊 Clinical Scales</a></li>
+<li class="sidebar__list-item"><a href="economic-burden.html">💰 Economic Burden</a></li>
+</ul></div>
+<div class="sidebar__group"><p class="sidebar__group-label" id="nav-methods">Methods &amp; Data</p>
+<ul class="sidebar__list" aria-labelledby="nav-methods">
+<li class="sidebar__list-item"><a href="comparativas.html">⚖️ Comparative</a></li>
+<li class="sidebar__list-item"><a href="methodology.html">📋 Methodology</a></li>
+<li class="sidebar__list-item"><a href="data.html">📊 Data</a></li>
+<li class="sidebar__list-item"><a href="sitemap.html">🗺 Sitemap</a></li>
+</ul></div>
+</nav>
+</aside>
+<div class="site-main">
+<button class="sidebar__toggle" id="sidebar-toggle" aria-expanded="false" aria-controls="sidebar" aria-label="Toggle navigation">☰</button>
+<main id="main">
 <div class="container">
 <h1>🧬 Genetics and Genetic Risk Factors</h1>
 <p class="subtitle">APOE ε4, LRRK2, GBA, HLA-DRB1 — Odds Ratios and Molecular Mechanisms</p>
@@ -55,7 +96,7 @@ footer{background:#161b22;border-top:1px solid #30363d;padding:20px;text-align:c
 <h2>Table: Genetic Risk Variants</h2>
 <table><thead><tr><th>Gene/Variant</th><th>Disease</th><th>Odds Ratio</th><th>Mechanism/Prevalence</th></tr></thead>
 <tbody><tr><td><strong>APOE ε4</strong></td><td style="color:#f85149">AD</td><td style="color:#ffa657">3.7x</td><td>%carriers: 25% AD, 8% ctrl</td></tr><tr><td><strong>APOE ε4/ε4</strong></td><td style="color:#f85149">AD</td><td style="color:#f85149">12x</td><td>Homozygote: 2-3% pop</td></tr><tr><td><strong>LRRK2 G2019S</strong></td><td style="color:#e3b341">PD</td><td style="color:#f85149">5.1x</td><td>1-2% sporadic PD</td></tr><tr><td><strong>GBA N370S</strong></td><td style="color:#e3b341">PD</td><td style="color:#ffa657">3.8x</td><td>5-8% PD carriers</td></tr><tr><td><strong>HLA-DRB1*15:01</strong></td><td style="color:#58a6ff">MS</td><td style="color:#ffa657">3.1x</td><td>30-40% MS patients</td></tr><tr><td><strong>TREM2</strong></td><td style="color:#f85149">AD</td><td style="color:#ffa657">2.9x</td><td>Rare; microglial activation</td></tr><tr><td><strong>SNCA</strong></td><td style="color:#e3b341">PD</td><td style="color:#ffa657">2.4x</td><td>α-synuclein triplication</td></tr><tr><td><strong>IL2RA</strong></td><td style="color:#58a6ff">MS</td><td style="color:#e3b341">1.6x</td><td>Common variant MS risk</td></tr></tbody></table>
-<div class="citation"><h3>How to cite</h3><p><strong>APA:</strong> de la Serna, J. M. (2026). Neuroinflammation and Neurodegenerative Disorders: Integrated Molecular Biomarkers, Neuroimaging and Clinical Progression Data. Harvard Dataverse. https://doi.org/10.7910/DVN/X2TQQA</p><pre>@dataset{delaserna2026neuro,
+<div class="citation"><h3>How to cite</h3><p><strong>APA:</strong> de la Serna, J. M. (2026). Neuroinflammation and Neurodegenerative Disorders: Integrated Molecular Biomarkers, Neuroimaging and Clinical Progression Data. Harvard Dataverse. https://doi.org/10.7910/DVN/X2TQQA</p><pre id="bibtex-block" tabindex="0" role="button" aria-label="BibTeX citation — click to copy">@dataset{delaserna2026neuro,
   author={de la Serna, Juan Moises},
   title={Neuroinflammation and Neurodegenerative Disorders: Integrated Molecular Biomarkers, Neuroimaging and Clinical Progression Data},
   year={2026},
@@ -63,7 +104,10 @@ footer{background:#161b22;border-top:1px solid #30363d;padding:20px;text-align:c
   doi={10.7910/DVN/X2TQQA},
   url={https://doi.org/10.7910/DVN/X2TQQA}
 }</pre></div>
-<footer><p>DOI: <a href="https://doi.org/10.7910/DVN/X2TQQA" target="_blank">10.7910/DVN/X2TQQA</a> &nbsp;|&nbsp; Author: de la Serna, J. M. (UNIR) &nbsp;|&nbsp; Source: Peer-reviewed literature 2013–2026 &nbsp;|&nbsp; CC0 1.0</p></footer>
+<footer><p>DOI: <a href="https://doi.org/10.7910/DVN/X2TQQA" target="_blank" rel="noopener noreferrer">10.7910/DVN/X2TQQA</a> &nbsp;|&nbsp; Author: de la Serna, J. M. (UNIR) &nbsp;|&nbsp; Source: Peer-reviewed literature 2013–2026 &nbsp;|&nbsp; CC0 1.0</p></footer>
+</div>
+</main>
+</div>
 </div>
 <script>
 const DIS=["Alzheimer (AD)","Parkinson (PD)","Multiple Sclerosis (MS)"];const DCOLS=["#f85149","#e3b341","#58a6ff"];const GENES=[{"gene":"APOE ε4","dis":"AD","OR":3.7,"pop":"%carriers: 25% AD, 8% ctrl"},{"gene":"APOE ε4/ε4","dis":"AD","OR":12,"pop":"Homozygote: 2-3% pop"},{"gene":"LRRK2 G2019S","dis":"PD","OR":5.1,"pop":"1-2% sporadic PD"},{"gene":"GBA N370S","dis":"PD","OR":3.8,"pop":"5-8% PD carriers"},{"gene":"HLA-DRB1*15:01","dis":"MS","OR":3.1,"pop":"30-40% MS patients"},{"gene":"TREM2","dis":"AD","OR":2.9,"pop":"Rare; microglial activation"},{"gene":"SNCA","dis":"PD","OR":2.4,"pop":"α-synuclein triplication"},{"gene":"IL2RA","dis":"MS","OR":1.6,"pop":"Common variant MS risk"}];
@@ -88,5 +132,9 @@ Plotly.newPlot('g3',[
 ],{barmode:'group',paper_bgcolor:'#161b22',plot_bgcolor:'#161b22',font:{color:'#c9d1d9',size:11},
   xaxis:{color:'#8b949e'},yaxis:{title:'% carriers',color:'#8b949e',gridcolor:'#30363d'},
   legend:{bgcolor:'#0d1117'},margin:{l:60,r:20,t:20,b:60}});
+/* ── Sidebar toggle ── */
+(function(){var t=document.getElementById('sidebar-toggle'),s=document.getElementById('sidebar'),o=document.getElementById('sidebar-overlay');if(!t)return;function op(){s.classList.add('open');o.classList.add('open');t.setAttribute('aria-expanded','true');document.body.style.overflow='hidden'}function cl(){s.classList.remove('open');o.classList.remove('open');t.setAttribute('aria-expanded','false');document.body.style.overflow=''}t.addEventListener('click',function(){s.classList.contains('open')?cl():op()});o.addEventListener('click',cl);document.addEventListener('keydown',function(e){if(e.key==='Escape'&&s.classList.contains('open'))cl()});}());
+/* ── BibTeX copy ── */
+(function(){var b=document.getElementById('bibtex-block');if(!b)return;var orig=b.textContent;function copy(){if(navigator.clipboard){navigator.clipboard.writeText(orig.trim()).then(function(){b.textContent='✓ Copied to clipboard';setTimeout(function(){b.textContent=orig},2000)}).catch(sel)}else{sel()}}function sel(){var r=document.createRange();r.selectNodeContents(b);var s=window.getSelection();s.removeAllRanges();s.addRange(r)}b.addEventListener('click',copy);b.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();copy()}});}());
 </script>
 </body></html>
